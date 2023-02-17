@@ -32,7 +32,9 @@
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="c8Y-Oz-NwT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="91G-yp-1IH"/>
+                            <constraint firstItem="c8Y-Oz-NwT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HIO-su-9fr"/>
                             <constraint firstItem="c8Y-Oz-NwT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qs3-1N-yHE"/>
+                            <constraint firstItem="c8Y-Oz-NwT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t9y-Ms-x6x"/>
                         </constraints>
                     </view>
                 </viewController>
