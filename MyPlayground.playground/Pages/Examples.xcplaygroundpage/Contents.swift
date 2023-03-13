@@ -18,13 +18,13 @@ colors.append("yellow")
 print(colors[3])
 
 //Dictionary
-var colors2  = [1:"red", 2:"blue", 3:"black"]
+var colors2  = [1: "red", 2: "blue", 3: "black"]
 print(colors2[2] ?? "vidhi")
 print("Dictionary: ", colors2)
 var colorpr = Array(colors2.keys)
 print(colorpr)
 
-for (colKey,colDict) in colors2{
+for (colKey,colDict) in colors2 {
     print("Key \(colKey) has \(colDict)")
 }
 
@@ -38,20 +38,21 @@ print(num2)
 print(num2!)
 
 //optional Handling
-if num != nil{
+if num != nil {
     print("value \(num!)")
-}else{
+} else {
     print("nil value")
 }
 
-//Optional binding
+//Optional binding if-let
 if let an = num2 {
     print("Value \(an)")
-}else{
+} else {
     print("nil value")
 }
 
-let fname: String? = nil;
+//nil coalescing
+let fname: String? = nil
 let lname: String = "vidhi"
 if let fname {
     print("name \(fname)")
@@ -59,37 +60,39 @@ if let fname {
 print("name is \(fname ?? lname)")
 
 let fruits = "Apple"
-switch fruits{
+switch fruits {
 case "Banana":
     print("fruite is banana")
-case "apple":
+    fallthrough
+case "Apple":
     print("fruite is apple")
+    fallthrough
 default:
     print("No fruite")
 }
 
 let colors3 = ["red", "blue", "black"]
-for color in colors3 where color != "red"{
+for color in colors3 where color != "red" {
     print(color)
 }
 
 var i=1
 print("while loop")
-while(i <= 5){
+while(i <= 5) {
     print(i)
     i += 2
 }
 
 var j = 2
 print("repeat while loop")
-repeat{
+repeat {
     print(j)
     j += 1
-}while(j<5)
+} while(j < 5)
 
 var week = 2
 var st = 1
-while(st<=week){
+while(st <= week) {
     print("Week: \(st)")
     st += 1
     for start in 1...3{
@@ -97,3 +100,34 @@ while(st<=week){
     }
 }
 
+//forEach
+let nums = [1,2,3,4]
+nums.forEach{number in
+    print(number)
+}
+
+//forEach with shorthand argument
+let nums2 = [5,6,7,8]
+nums2.forEach {
+    print($0)
+}
+
+//map
+let days = ["Sunday", "Monday"]
+let count_days = days.map {
+    $0.count
+}
+print(count_days)
+
+//Property 
+class PropClass {
+    var numProp: Int = 0 {
+        didSet {
+            print(numProp + 2)
+        }
+    }
+}
+var obj3 = PropClass()
+obj3.numProp = 20
+obj3.numProp = 30
+obj3.numProp = 40
