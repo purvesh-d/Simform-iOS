@@ -183,8 +183,6 @@ var emp1 = Employee(name: "simform", num: 01)
 var emp2 = Employee(name: "solution", num: 02)
 print("Name: \(emp2.name) and number: \(emp2.num)")
 
-//required initializer
-
 //struct
 struct StudentStruct {
     var name = ""
@@ -388,7 +386,7 @@ class CompGet {
 
     var sumGet: Int {
         get {
-                numGet1 + numGet2
+            numGet1 + numGet2
         }
         set(updateNum) {
             numGet1 = updateNum + 10
@@ -886,7 +884,7 @@ extension Int {
 var newEx = 7.add
 print("Addition: \(newEx)")
 
-//private extension property access in class
+//extension property access in class
 class ClassExt {
     var val: Int = 0
 }
@@ -942,7 +940,7 @@ print("Name:", obji.namei)
 //protocol class
 protocol Message {
     var name: String { get }
-    func message()
+    mutating func message()
 }
 class A: Message {
     var name = "morning"
@@ -1193,3 +1191,32 @@ class OverloadSame {
 var objOverload2 = OverloadSame()
 objOverload2.display(num1: 10)
 objOverload2.display(num1: 20, num2: 30)
+
+//if-case
+enum NewEnum {
+    case one(Int)
+}
+let val = NewEnum.one(10)
+if case .one(let n) = val {
+    print(n)
+}
+
+//capture list
+class Democ {
+    var find = 1
+    lazy var cl: () -> Void = { [find] in
+        print(find)
+        
+    }
+}
+var objcl = Democ()
+objcl.cl()
+
+//if with enum
+//enum NewEnumDemo {
+//    case color(String)
+//}
+//var objEnum2 = NewEnumDemo.color("Black")
+//if objEnum = .color {
+//
+//}
