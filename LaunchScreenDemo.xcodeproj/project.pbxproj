@@ -13,7 +13,6 @@
 		1BD6D788299CB1C0000B1CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD6D786299CB1C0000B1CE4 /* Main.storyboard */; };
 		1BD6D78A299CB1C1000B1CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD6D789299CB1C1000B1CE4 /* Assets.xcassets */; };
 		1BD6D78D299CB1C1000B1CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */; };
-		1BEE125A299F2FA90064CAB1 /* BelieveIt-DvLE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE1259299F2F980064CAB1 /* BelieveIt-DvLE.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		1BD6D78C299CB1C1000B1CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BD6D78E299CB1C1000B1CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BD6D794299CD1D6000B1CE4 /* LaunchScreenDemoRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchScreenDemoRelease.entitlements; sourceTree = "<group>"; };
-		1BEE1259299F2F980064CAB1 /* BelieveIt-DvLE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BelieveIt-DvLE.ttf"; path = "../../../../../../Downloads/believe-it-font 3/BelieveIt-DvLE.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +65,8 @@
 				1BD6D789299CB1C1000B1CE4 /* Assets.xcassets */,
 				1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */,
 				1BD6D78E299CB1C1000B1CE4 /* Info.plist */,
-				1BEE1258299F2F6F0064CAB1 /* fonts */,
 			);
 			path = LaunchScreenDemo;
-			sourceTree = "<group>";
-		};
-		1BEE1258299F2F6F0064CAB1 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				1BEE1259299F2F980064CAB1 /* BelieveIt-DvLE.ttf */,
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +130,6 @@
 				1BD6D78D299CB1C1000B1CE4 /* LaunchScreen.storyboard in Resources */,
 				1BD6D78A299CB1C1000B1CE4 /* Assets.xcassets in Resources */,
 				1BD6D788299CB1C0000B1CE4 /* Main.storyboard in Resources */,
-				1BEE125A299F2FA90064CAB1 /* BelieveIt-DvLE.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
