@@ -75,10 +75,12 @@ class DemoInit {
     var name = ""
     var college = ""
     var department = ""
+    
     init(name: String, college: String) {
         self.name = name
         self.college = college
     }
+    
     init(name: String, department: String) {
         self.name = name
         self.department = department
@@ -115,16 +117,19 @@ class SuperClass {
         print("This is a super class")
     }
 }
+
 class SubClass: SuperClass {
     func display() {
         print("name: ", nameb)
     }
 }
+
 class SubClassNew: SuperClass {
     func display2() {
         print("name: ",nameb)
     }
 }
+
 var sub1 = SubClass()
 var sub2 = SubClassNew()
 sub1.nameb = "simform"
@@ -140,12 +145,14 @@ class SuperDemo {
         print("Square: ", num1 * num1)
     }
 }
+
 class SubDemo: SuperDemo {
     override func demo() {
         super.demo()
         print("Cube: ", num1 * num1 * num1)
     }
 }
+
 var overObj = SubDemo()
 overObj.num1 = 5
 overObj.demo()
@@ -157,6 +164,7 @@ class PowerDemo {
     init(value: Int){
         self.value = value
     }
+    
     func doPower(power: Int) -> Int {
         self.power = power
         return Int(pow(Double(value), Double(power)))
@@ -169,19 +177,24 @@ print("\(objPow.value)'s \(objPow.power) power \(result)")
 /**Create a swift class example which has a parent class for vehicles, and child classes for two different vehicles e.g. (bike & car). You need to use common properties and method in the parent class and inside child class, there will be some different property which is not common.*/
 class Vehicles {
     var pname = ""
+    
     func displayProduct() {
         print("Product name is \(pname)")
     }
 }
+
 class Bike: Vehicles {
     var color = ""
+    
     func displayColor() {
         print("Color of \(pname) is \(color)")
     }
     
 }
+
 class Car: Vehicles {
     var price = 0
+    
     func displayPrice() {
         print("Price of \(pname) is \(price)")
     }
@@ -204,6 +217,7 @@ class Person {
     init(name: String) {
         self.name = name
     }
+    
     func greet() {
         print("Hello \(name)")
     }
@@ -224,6 +238,7 @@ person1.greet()
 
 class Example {
     var str: String
+    
     init() {
         str = "simform"
     }
@@ -253,6 +268,7 @@ work1.displayProjects()
 /**Create a structure example which demonstrates use of initializer in structures.**/
 struct DemoStruct {
     var dname: String
+    
     init() {
         dname = "vidhi"
     }
@@ -268,6 +284,7 @@ struct StructInit {
         name = "simform"
         age = 19
     }
+    
     init(name: String, age: Int) {
         self.name = name
         self.age = age
@@ -287,6 +304,7 @@ struct OddEven {
     var all = [1, 3, 5, 6, 8, 10, 9, 7, 8, 12]
     var odd = [Int]()
     var even = [Int]()
+    
     func find() -> (odd: [Int], even: [Int]) {
         var odd: [Int] = []
         var even: [Int] = []
@@ -339,6 +357,7 @@ Try to figure out basic difference between class and structures and give a demo 
  */
 class ExampleClass {
     var name = ""
+    
     init(name: String) {
         self.name = name
     }
@@ -360,6 +379,7 @@ Example. It should return Monday or mon if I pass parameter 1 for get day name.
 enum DaysEnum: Int, CaseIterable {
     case Monday = 1, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 }
+
 func find(day: DaysEnum) {
     switch day {
     case .Monday:
