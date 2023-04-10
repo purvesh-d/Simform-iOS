@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextCorner: UIButton!
     @IBOutlet weak var borderOf: UIView!
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
