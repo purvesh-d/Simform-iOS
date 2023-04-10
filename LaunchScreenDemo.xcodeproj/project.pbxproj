@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21DE8029E01823000730B1 /* NewViewController.swift */; };
+		1B48D47329E43D7B00E90B02 /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */; };
+		1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E52729E3EAED0090E749 /* LabelViewController.swift */; };
+		1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */; };
+		1B65E53629E40DB30090E749 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53529E40DB30090E749 /* CustomTextField.swift */; };
+		1B65E53829E410DE0090E749 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53729E410DE0090E749 /* TextFieldViewController.swift */; };
+		1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53929E4165A0090E749 /* TextViewController.swift */; };
+		1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53B29E41CFF0090E749 /* CustomTextView.swift */; };
+		1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53D29E420B30090E749 /* SwitchViewController.swift */; };
 		1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6D780299CB1C0000B1CE4 /* AppDelegate.swift */; };
 		1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6D782299CB1C0000B1CE4 /* SceneDelegate.swift */; };
 		1BD6D785299CB1C0000B1CE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6D784299CB1C0000B1CE4 /* ViewController.swift */; };
@@ -18,6 +26,14 @@
 
 /* Begin PBXFileReference section */
 		1B21DE8029E01823000730B1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
+		1B65E52729E3EAED0090E749 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		1B65E53529E40DB30090E749 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1B65E53729E410DE0090E749 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		1B65E53929E4165A0090E749 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		1B65E53B29E41CFF0090E749 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		1B65E53D29E420B30090E749 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 		1BD6D77D299CB1C0000B1CE4 /* LaunchScreenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchScreenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD6D780299CB1C0000B1CE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BD6D782299CB1C0000B1CE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +84,14 @@
 				1BD6D789299CB1C1000B1CE4 /* Assets.xcassets */,
 				1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */,
 				1BD6D78E299CB1C1000B1CE4 /* Info.plist */,
+				1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */,
+				1B65E52729E3EAED0090E749 /* LabelViewController.swift */,
+				1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */,
+				1B65E53529E40DB30090E749 /* CustomTextField.swift */,
+				1B65E53729E410DE0090E749 /* TextFieldViewController.swift */,
+				1B65E53929E4165A0090E749 /* TextViewController.swift */,
+				1B65E53B29E41CFF0090E749 /* CustomTextView.swift */,
+				1B65E53D29E420B30090E749 /* SwitchViewController.swift */,
 			);
 			path = LaunchScreenDemo;
 			sourceTree = "<group>";
@@ -132,6 +156,7 @@
 			files = (
 				1BD6D78D299CB1C1000B1CE4 /* LaunchScreen.storyboard in Resources */,
 				1BD6D78A299CB1C1000B1CE4 /* Assets.xcassets in Resources */,
+				1B48D47329E43D7B00E90B02 /* UIComponents.storyboard in Resources */,
 				1BD6D788299CB1C0000B1CE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,9 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B65E53829E410DE0090E749 /* TextFieldViewController.swift in Sources */,
+				1B65E53629E40DB30090E749 /* CustomTextField.swift in Sources */,
 				1BD6D785299CB1C0000B1CE4 /* ViewController.swift in Sources */,
+				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
+				1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */,
+				1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */,
+				1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */,
 				1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */,
+				1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */,
 				1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
