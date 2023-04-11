@@ -14,7 +14,7 @@ class SwitchViewController: UIViewController {
        
     }
     
-    @IBAction func switchbtn(_ sender: UISwitch) {
+    @IBAction func switchon(_ sender: UISwitch) {
         if sender.isOn {
             view.backgroundColor = .gray
         } else {
