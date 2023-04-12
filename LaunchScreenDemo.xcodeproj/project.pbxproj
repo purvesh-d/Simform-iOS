@@ -27,6 +27,19 @@
 		1BD6D788299CB1C0000B1CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD6D786299CB1C0000B1CE4 /* Main.storyboard */; };
 		1BD6D78A299CB1C1000B1CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD6D789299CB1C1000B1CE4 /* Assets.xcassets */; };
 		1BD6D78D299CB1C1000B1CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */; };
+		1BDDA23B29E6618800D06376 /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA23A29E6618800D06376 /* CustomSegmentControl.swift */; };
+		1BDDA23D29E68FEC00D06376 /* TableContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA23C29E68FEC00D06376 /* TableContentViewController.swift */; };
+		1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA24329E6942F00D06376 /* IndexTableViewCell.swift */; };
+		1BDDA24629E6942F00D06376 /* IndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDDA24429E6942F00D06376 /* IndexTableViewCell.xib */; };
+		1BDDA24929E6AB2600D06376 /* EvenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA24729E6AB2600D06376 /* EvenTableViewCell.swift */; };
+		1BDDA24A29E6AB2600D06376 /* EvenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDDA24829E6AB2600D06376 /* EvenTableViewCell.xib */; };
+		1BDDA25929E6BC8C00D06376 /* FindJobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA25829E6BC8C00D06376 /* FindJobModel.swift */; };
+		1BDDA25C29E6BE4900D06376 /* CompanyTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA25A29E6BE4900D06376 /* CompanyTableCellTableViewCell.swift */; };
+		1BDDA25D29E6BE4900D06376 /* CompanyTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDDA25B29E6BE4900D06376 /* CompanyTableCellTableViewCell.xib */; };
+		1BDDA25F29E6C12400D06376 /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA25E29E6C12400D06376 /* JobViewController.swift */; };
+		1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA26029E6CE4800D06376 /* StateTableViewController.swift */; };
+		1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA26229E6D07000D06376 /* StateTableViewCell.swift */; };
+		1BDDA26529E6D07000D06376 /* StateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDDA26329E6D07000D06376 /* StateTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +66,19 @@
 		1BD6D78C299CB1C1000B1CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BD6D78E299CB1C1000B1CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BD6D794299CD1D6000B1CE4 /* LaunchScreenDemoRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchScreenDemoRelease.entitlements; sourceTree = "<group>"; };
+		1BDDA23A29E6618800D06376 /* CustomSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControl.swift; sourceTree = "<group>"; };
+		1BDDA23C29E68FEC00D06376 /* TableContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableContentViewController.swift; sourceTree = "<group>"; };
+		1BDDA24329E6942F00D06376 /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
+		1BDDA24429E6942F00D06376 /* IndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexTableViewCell.xib; sourceTree = "<group>"; };
+		1BDDA24729E6AB2600D06376 /* EvenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenTableViewCell.swift; sourceTree = "<group>"; };
+		1BDDA24829E6AB2600D06376 /* EvenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvenTableViewCell.xib; sourceTree = "<group>"; };
+		1BDDA25829E6BC8C00D06376 /* FindJobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindJobModel.swift; sourceTree = "<group>"; };
+		1BDDA25A29E6BE4900D06376 /* CompanyTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		1BDDA25B29E6BE4900D06376 /* CompanyTableCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableCellTableViewCell.xib; sourceTree = "<group>"; };
+		1BDDA25E29E6C12400D06376 /* JobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
+		1BDDA26029E6CE4800D06376 /* StateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewController.swift; sourceTree = "<group>"; };
+		1BDDA26229E6D07000D06376 /* StateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewCell.swift; sourceTree = "<group>"; };
+		1BDDA26329E6D07000D06376 /* StateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +111,7 @@
 		1BD6D77F299CB1C0000B1CE4 /* LaunchScreenDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1BDDA24229E693FE00D06376 /* Cells */,
 				1BD6D794299CD1D6000B1CE4 /* LaunchScreenDemoRelease.entitlements */,
 				1BD6D780299CB1C0000B1CE4 /* AppDelegate.swift */,
 				1BD6D782299CB1C0000B1CE4 /* SceneDelegate.swift */,
@@ -95,6 +122,8 @@
 				1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */,
 				1BD6D78E299CB1C1000B1CE4 /* Info.plist */,
 				1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */,
+				1BDDA23C29E68FEC00D06376 /* TableContentViewController.swift */,
+				1BDDA23A29E6618800D06376 /* CustomSegmentControl.swift */,
 				1BC51A2129E5796B00AC4827 /* StepperViewController.swift */,
 				1BC51A1F29E5701400AC4827 /* SegmentedViewController.swift */,
 				1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */,
@@ -107,8 +136,26 @@
 				1B65E53929E4165A0090E749 /* TextViewController.swift */,
 				1B65E53B29E41CFF0090E749 /* CustomTextView.swift */,
 				1B65E53D29E420B30090E749 /* SwitchViewController.swift */,
+				1BDDA25829E6BC8C00D06376 /* FindJobModel.swift */,
+				1BDDA25E29E6C12400D06376 /* JobViewController.swift */,
+				1BDDA26029E6CE4800D06376 /* StateTableViewController.swift */,
 			);
 			path = LaunchScreenDemo;
+			sourceTree = "<group>";
+		};
+		1BDDA24229E693FE00D06376 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1BDDA24729E6AB2600D06376 /* EvenTableViewCell.swift */,
+				1BDDA24829E6AB2600D06376 /* EvenTableViewCell.xib */,
+				1BDDA24329E6942F00D06376 /* IndexTableViewCell.swift */,
+				1BDDA24429E6942F00D06376 /* IndexTableViewCell.xib */,
+				1BDDA25A29E6BE4900D06376 /* CompanyTableCellTableViewCell.swift */,
+				1BDDA25B29E6BE4900D06376 /* CompanyTableCellTableViewCell.xib */,
+				1BDDA26229E6D07000D06376 /* StateTableViewCell.swift */,
+				1BDDA26329E6D07000D06376 /* StateTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +216,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BDDA24629E6942F00D06376 /* IndexTableViewCell.xib in Resources */,
 				1BD6D78D299CB1C1000B1CE4 /* LaunchScreen.storyboard in Resources */,
 				1BD6D78A299CB1C1000B1CE4 /* Assets.xcassets in Resources */,
+				1BDDA26529E6D07000D06376 /* StateTableViewCell.xib in Resources */,
 				1B48D47329E43D7B00E90B02 /* UIComponents.storyboard in Resources */,
 				1BD6D788299CB1C0000B1CE4 /* Main.storyboard in Resources */,
+				1BDDA24A29E6AB2600D06376 /* EvenTableViewCell.xib in Resources */,
+				1BDDA25D29E6BE4900D06376 /* CompanyTableCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +236,15 @@
 			files = (
 				1B65E53829E410DE0090E749 /* TextFieldViewController.swift in Sources */,
 				1B65E53629E40DB30090E749 /* CustomTextField.swift in Sources */,
+				1BDDA25C29E6BE4900D06376 /* CompanyTableCellTableViewCell.swift in Sources */,
 				1BD6D785299CB1C0000B1CE4 /* ViewController.swift in Sources */,
+				1BDDA24929E6AB2600D06376 /* EvenTableViewCell.swift in Sources */,
+				1BDDA25F29E6C12400D06376 /* JobViewController.swift in Sources */,
+				1BDDA23B29E6618800D06376 /* CustomSegmentControl.swift in Sources */,
 				1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */,
 				1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */,
+				1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */,
+				1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */,
 				1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */,
 				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
@@ -196,8 +253,11 @@
 				1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */,
 				1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */,
 				1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */,
+				1BDDA23D29E68FEC00D06376 /* TableContentViewController.swift in Sources */,
 				1BC51A2029E5701400AC4827 /* SegmentedViewController.swift in Sources */,
 				1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */,
+				1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */,
+				1BDDA25929E6BC8C00D06376 /* FindJobModel.swift in Sources */,
 				1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

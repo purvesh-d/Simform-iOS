@@ -10,23 +10,24 @@ import UIKit
 class PageControlViewController: UIViewController {
 
     @IBOutlet weak var firstPageControl: UIPageControl!
+    @IBOutlet weak var secondPageControl: UIPageControl!
+    @IBOutlet weak var thirdPageControl: UIPageControl!
     @IBOutlet weak var bottompagecontrol: UIPageControl!
-    @IBOutlet weak var thirdpagecontrol: UIPageControl!
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        thirdpagecontrol.numberOfPages = 3
-        thirdpagecontrol.currentPage = 2
-        thirdpagecontrol.currentPageIndicatorTintColor = UIColor.blue
-        thirdpagecontrol.pageIndicatorTintColor = UIColor.red
+        secondPageControl.numberOfPages = 3
+        secondPageControl.currentPage = 2
+        secondPageControl.currentPageIndicatorTintColor = UIColor.blue
+        secondPageControl.pageIndicatorTintColor = UIColor.red
     
-        thirdpagecontrol.direction = .topToBottom
-    }
-    
-    @IBAction func firstAction(_ sender: UIPageControl) {
-        if sender.isSelected {
-            
-        }
+        secondPageControl.direction = .topToBottom
+        
+        thirdPageControl.preferredIndicatorImage = UIImage(named: "logo")
+        thirdPageControl.preferredCurrentPageIndicatorImage = UIImage(named: "facebook")
+        
     }
     
     @IBAction func pageControlChanged(_ sender: UIPageControl) {
