@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21DE8029E01823000730B1 /* NewViewController.swift */; };
 		1B48D47329E43D7B00E90B02 /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */; };
+		1B4B6E7529E7D59200CCD5FF /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7429E7D59200CCD5FF /* StateData.swift */; };
+		1B4B6E7929E8018C00CCD5FF /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */; };
+		1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */; };
+		1B4B6E8129E8159700CCD5FF /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E8029E8159700CCD5FF /* ColorTableViewCell.swift */; };
 		1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E52729E3EAED0090E749 /* LabelViewController.swift */; };
 		1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */; };
 		1B65E53629E40DB30090E749 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53529E40DB30090E749 /* CustomTextField.swift */; };
@@ -45,6 +49,10 @@
 /* Begin PBXFileReference section */
 		1B21DE8029E01823000730B1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
+		1B4B6E7429E7D59200CCD5FF /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
+		1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
+		1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		1B4B6E8029E8159700CCD5FF /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
 		1B65E52729E3EAED0090E749 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		1B65E53529E40DB30090E749 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -122,6 +130,8 @@
 				1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */,
 				1BD6D78E299CB1C1000B1CE4 /* Info.plist */,
 				1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */,
+				1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */,
+				1B4B6E7429E7D59200CCD5FF /* StateData.swift */,
 				1BDDA23C29E68FEC00D06376 /* TableContentViewController.swift */,
 				1BDDA23A29E6618800D06376 /* CustomSegmentControl.swift */,
 				1BC51A2129E5796B00AC4827 /* StepperViewController.swift */,
@@ -154,6 +164,8 @@
 				1BDDA25B29E6BE4900D06376 /* CompanyTableCellTableViewCell.xib */,
 				1BDDA26229E6D07000D06376 /* StateTableViewCell.swift */,
 				1BDDA26329E6D07000D06376 /* StateTableViewCell.xib */,
+				1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */,
+				1B4B6E8029E8159700CCD5FF /* ColorTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -239,14 +251,17 @@
 				1BDDA25C29E6BE4900D06376 /* CompanyTableCellTableViewCell.swift in Sources */,
 				1BD6D785299CB1C0000B1CE4 /* ViewController.swift in Sources */,
 				1BDDA24929E6AB2600D06376 /* EvenTableViewCell.swift in Sources */,
+				1B4B6E7529E7D59200CCD5FF /* StateData.swift in Sources */,
 				1BDDA25F29E6C12400D06376 /* JobViewController.swift in Sources */,
 				1BDDA23B29E6618800D06376 /* CustomSegmentControl.swift in Sources */,
 				1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */,
+				1B4B6E8129E8159700CCD5FF /* ColorTableViewCell.swift in Sources */,
 				1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */,
 				1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */,
 				1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */,
 				1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */,
 				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
+				1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */,
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
 				1BC51A2229E5796B00AC4827 /* StepperViewController.swift in Sources */,
 				1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */,
@@ -259,6 +274,7 @@
 				1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */,
 				1BDDA25929E6BC8C00D06376 /* FindJobModel.swift in Sources */,
 				1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */,
+				1B4B6E7929E8018C00CCD5FF /* DemoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
