@@ -13,6 +13,9 @@
 		1B4B6E7929E8018C00CCD5FF /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */; };
 		1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */; };
 		1B4B6E8129E8159700CCD5FF /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E8029E8159700CCD5FF /* ColorTableViewCell.swift */; };
+		1B4E45F929E90DD30043A415 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E45F829E90DD30043A415 /* CollectionViewController.swift */; };
+		1B4E45FC29E90EF90043A415 /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E45FB29E90EF90043A415 /* DemoCollectionViewCell.swift */; };
+		1B4E45FE29E914A40043A415 /* CollectionImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E45FD29E914A40043A415 /* CollectionImageViewController.swift */; };
 		1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E52729E3EAED0090E749 /* LabelViewController.swift */; };
 		1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */; };
 		1B65E53629E40DB30090E749 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53529E40DB30090E749 /* CustomTextField.swift */; };
@@ -20,6 +23,8 @@
 		1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53929E4165A0090E749 /* TextViewController.swift */; };
 		1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53B29E41CFF0090E749 /* CustomTextView.swift */; };
 		1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53D29E420B30090E749 /* SwitchViewController.swift */; };
+		1B8E43F629E949FD00622504 /* LabelExpandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */; };
+		1B8E43FF29E9815B00622504 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E43FE29E9815B00622504 /* DemoData.swift */; };
 		1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1929E52B4600AC4827 /* SliderViewController.swift */; };
 		1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */; };
 		1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */; };
@@ -53,6 +58,9 @@
 		1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
 		1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
 		1B4B6E8029E8159700CCD5FF /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		1B4E45F829E90DD30043A415 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1B4E45FB29E90EF90043A415 /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B4E45FD29E914A40043A415 /* CollectionImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionImageViewController.swift; sourceTree = "<group>"; };
 		1B65E52729E3EAED0090E749 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		1B65E53529E40DB30090E749 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -60,6 +68,8 @@
 		1B65E53929E4165A0090E749 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1B65E53B29E41CFF0090E749 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		1B65E53D29E420B30090E749 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExpandTableViewCell.swift; sourceTree = "<group>"; };
+		1B8E43FE29E9815B00622504 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		1BC51A1929E52B4600AC4827 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +110,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4E45FA29E90EDA0043A415 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				1B4E45FB29E90EF90043A415 /* DemoCollectionViewCell.swift */,
+			);
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
+		1B8E43F729E97F4100622504 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BDDA25829E6BC8C00D06376 /* FindJobModel.swift */,
+				1B4B6E7429E7D59200CCD5FF /* StateData.swift */,
+				1B8E43FE29E9815B00622504 /* DemoData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B8E43FB29E97FD900622504 /* UIComponentsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B65E52729E3EAED0090E749 /* LabelViewController.swift */,
+				1BC51A2129E5796B00AC4827 /* StepperViewController.swift */,
+				1BC51A1F29E5701400AC4827 /* SegmentedViewController.swift */,
+				1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */,
+				1B65E53729E410DE0090E749 /* TextFieldViewController.swift */,
+				1B65E53929E4165A0090E749 /* TextViewController.swift */,
+				1B65E53B29E41CFF0090E749 /* CustomTextView.swift */,
+				1B65E53D29E420B30090E749 /* SwitchViewController.swift */,
+				1BDDA25E29E6C12400D06376 /* JobViewController.swift */,
+				1BDDA26029E6CE4800D06376 /* StateTableViewController.swift */,
+				1B4E45FD29E914A40043A415 /* CollectionImageViewController.swift */,
+				1B4E45F829E90DD30043A415 /* CollectionViewController.swift */,
+				1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */,
+				1BDDA23C29E68FEC00D06376 /* TableContentViewController.swift */,
+				1BDDA23A29E6618800D06376 /* CustomSegmentControl.swift */,
+				1B65E53529E40DB30090E749 /* CustomTextField.swift */,
+				1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */,
+				1BC51A1929E52B4600AC4827 /* SliderViewController.swift */,
+				1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */,
+			);
+			path = UIComponentsViewControllers;
+			sourceTree = "<group>";
+		};
 		1BD6D774299CB1C0000B1CE4 = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +173,6 @@
 		1BD6D77F299CB1C0000B1CE4 /* LaunchScreenDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1BDDA24229E693FE00D06376 /* Cells */,
 				1BD6D794299CD1D6000B1CE4 /* LaunchScreenDemoRelease.entitlements */,
 				1BD6D780299CB1C0000B1CE4 /* AppDelegate.swift */,
 				1BD6D782299CB1C0000B1CE4 /* SceneDelegate.swift */,
@@ -130,25 +183,10 @@
 				1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */,
 				1BD6D78E299CB1C1000B1CE4 /* Info.plist */,
 				1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */,
-				1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */,
-				1B4B6E7429E7D59200CCD5FF /* StateData.swift */,
-				1BDDA23C29E68FEC00D06376 /* TableContentViewController.swift */,
-				1BDDA23A29E6618800D06376 /* CustomSegmentControl.swift */,
-				1BC51A2129E5796B00AC4827 /* StepperViewController.swift */,
-				1BC51A1F29E5701400AC4827 /* SegmentedViewController.swift */,
-				1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */,
-				1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */,
-				1BC51A1929E52B4600AC4827 /* SliderViewController.swift */,
-				1B65E52729E3EAED0090E749 /* LabelViewController.swift */,
-				1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */,
-				1B65E53529E40DB30090E749 /* CustomTextField.swift */,
-				1B65E53729E410DE0090E749 /* TextFieldViewController.swift */,
-				1B65E53929E4165A0090E749 /* TextViewController.swift */,
-				1B65E53B29E41CFF0090E749 /* CustomTextView.swift */,
-				1B65E53D29E420B30090E749 /* SwitchViewController.swift */,
-				1BDDA25829E6BC8C00D06376 /* FindJobModel.swift */,
-				1BDDA25E29E6C12400D06376 /* JobViewController.swift */,
-				1BDDA26029E6CE4800D06376 /* StateTableViewController.swift */,
+				1B8E43FB29E97FD900622504 /* UIComponentsViewControllers */,
+				1B4E45FA29E90EDA0043A415 /* CollectionCells */,
+				1BDDA24229E693FE00D06376 /* Cells */,
+				1B8E43F729E97F4100622504 /* Models */,
 			);
 			path = LaunchScreenDemo;
 			sourceTree = "<group>";
@@ -166,6 +204,7 @@
 				1BDDA26329E6D07000D06376 /* StateTableViewCell.xib */,
 				1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */,
 				1B4B6E8029E8159700CCD5FF /* ColorTableViewCell.swift */,
+				1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -258,20 +297,25 @@
 				1B4B6E8129E8159700CCD5FF /* ColorTableViewCell.swift in Sources */,
 				1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */,
 				1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */,
+				1B4E45FE29E914A40043A415 /* CollectionImageViewController.swift in Sources */,
 				1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */,
 				1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */,
 				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
 				1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */,
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
+				1B8E43F629E949FD00622504 /* LabelExpandTableViewCell.swift in Sources */,
 				1BC51A2229E5796B00AC4827 /* StepperViewController.swift in Sources */,
 				1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */,
+				1B4E45FC29E90EF90043A415 /* DemoCollectionViewCell.swift in Sources */,
 				1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */,
 				1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */,
 				1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */,
 				1BDDA23D29E68FEC00D06376 /* TableContentViewController.swift in Sources */,
 				1BC51A2029E5701400AC4827 /* SegmentedViewController.swift in Sources */,
+				1B4E45F929E90DD30043A415 /* CollectionViewController.swift in Sources */,
 				1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */,
 				1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */,
+				1B8E43FF29E9815B00622504 /* DemoData.swift in Sources */,
 				1BDDA25929E6BC8C00D06376 /* FindJobModel.swift in Sources */,
 				1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */,
 				1B4B6E7929E8018C00CCD5FF /* DemoTableViewController.swift in Sources */,

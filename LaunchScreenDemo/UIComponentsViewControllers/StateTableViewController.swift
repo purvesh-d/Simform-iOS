@@ -16,7 +16,7 @@ class StateTableViewController: UIViewController {
         super.viewDidLoad()
 
         stateView.register(UINib(nibName: "StateTableViewCell", bundle: nil), forCellReuseIdentifier: "StateTableViewCell")
-        //stateView.backgroundColor = .lightGray
+        stateView.backgroundColor = .lightGray
     }
 }
 
