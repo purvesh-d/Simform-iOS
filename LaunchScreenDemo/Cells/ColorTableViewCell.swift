@@ -11,10 +11,15 @@ class ColorTableViewCell: UITableViewCell {
 
     @IBOutlet weak var colorLabel: UILabel!
     @IBOutlet weak var btnSelect: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         btnSelect.layer.cornerRadius = btnSelect.frame.size.height/2
         btnSelect.layer.borderColor = UIColor.gray.cgColor
         btnSelect.layer.borderWidth = 1
+    }
+    
+    override func prepareForReuse() {
+        btnSelect.isSelected = false
     }
 }

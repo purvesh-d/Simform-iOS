@@ -10,14 +10,7 @@ import UIKit
 class DemoTableViewController: UIViewController {
 
     @IBOutlet weak var dataView: UITableView!
-    
-    struct DemoData {
-        var sectionName: String
-        var dataName: [String]
-    }
-    
-    var arrayOfData = [DemoData(sectionName: "Fruits", dataName: ["Apple", "Banana", "Mango", "Watermelon"]),
-                        DemoData(sectionName: "Colors", dataName: ["Black", "Green", "Yellow", "white", "blue"])]
+    var arrayOfData = DemoData.getData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,21 +28,24 @@ extension DemoTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        guard let tempColor = tableView.dequeueReusableCell(withIdentifier: "ColorTableViewCell") as? ColorTableViewCell,
+            let tempFruit = tableView.dequeueReusableCell(withIdentifier: "DemoTableViewCell") as? DemoTableViewCell,
+            let dataOfLabel = tableView.dequeueReusableCell(withIdentifier: "LabelExpandTableViewCell") as? LabelExpandTableViewCell else {
+            return UITableViewCell()
+        }
         if indexPath.section == 0 {
-            guard let tempFruit = tableView.dequeueReusableCell(withIdentifier: "DemoTableViewCell") as? DemoTableViewCell else {
-                return UITableViewCell()
-            }
             let newData = arrayOfData[indexPath.section].dataName[indexPath.row]
             tempFruit.dataLabel.text = "\(newData)"
             return tempFruit
         } else if indexPath.section == 1 {
-            guard let tempColor = tableView.dequeueReusableCell(withIdentifier: "ColorTableViewCell") as? ColorTableViewCell else {
-                return UITableViewCell()
-            }
             let newColor = arrayOfData[indexPath.section].dataName[indexPath.row]
             tempColor.colorLabel.text = "\(newColor)"
             return tempColor
+        } else if indexPath.section == 2 {
+            let newLabel = arrayOfData[indexPath.section].dataName[indexPath.row]
+            dataOfLabel.lblOfData.text = "\(newLabel)"
+            dataOfLabel.lblOfData.numberOfLines = 2
+            return dataOfLabel
         } else {
             return UITableViewCell()
         }
@@ -57,6 +53,10 @@ extension DemoTableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return arrayOfData[section].sectionName
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 91
     }
 }
 
@@ -69,6 +69,13 @@ extension DemoTableViewController: UITableViewDelegate {
                 data.btnSelect.isSelected = true
             }
         }
+
+        if indexPath.section == 2 {
+            
+            if let dataOfLabel = tableView.cellForRow(at: indexPath as IndexPath) as? LabelExpandTableViewCell {
+                dataOfLabel.lblOfData.numberOfLines = 0
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
@@ -79,21 +86,15 @@ extension DemoTableViewController: UITableViewDelegate {
         }
     }
     
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        if indexPath.section == 1 {
-            return indexPath
-        }
-        return nil
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if indexPath.section == 0 {
-            if editingStyle == .delete {
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
                 
-                arrayOfData[indexPath.section].dataName.remove(at: indexPath.row)
-                tableView.deleteRows(at: [indexPath], with: .fade)
-            }
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { [self] (_, _, completionHandler) in
+            self.arrayOfData[indexPath.section].dataName.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
+        deleteAction.image = UIImage(systemName: "trash")
+        deleteAction.backgroundColor = .systemRed
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+        return configuration
     }
 }
