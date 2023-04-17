@@ -49,6 +49,12 @@
 		1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA26029E6CE4800D06376 /* StateTableViewController.swift */; };
 		1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDDA26229E6D07000D06376 /* StateTableViewCell.swift */; };
 		1BDDA26529E6D07000D06376 /* StateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BDDA26329E6D07000D06376 /* StateTableViewCell.xib */; };
+		1BDFA23029ED11B900340837 /* DemoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA22F29ED11B900340837 /* DemoCollectionViewController.swift */; };
+		1BDFA23229ED12BB00340837 /* ArtistsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23129ED12BB00340837 /* ArtistsCollectionViewCell.swift */; };
+		1BDFA23429ED1B8F00340837 /* ArtistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */; };
+		1BDFA23629ED404B00340837 /* AlbumsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23529ED404B00340837 /* AlbumsCollectionViewCell.swift */; };
+		1BDFA23829ED413100340837 /* AlbumsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23729ED413100340837 /* AlbumsModel.swift */; };
+		1BDFA23A29ED603B00340837 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23929ED603B00340837 /* ImagePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +103,12 @@
 		1BDDA26029E6CE4800D06376 /* StateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewController.swift; sourceTree = "<group>"; };
 		1BDDA26229E6D07000D06376 /* StateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTableViewCell.swift; sourceTree = "<group>"; };
 		1BDDA26329E6D07000D06376 /* StateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateTableViewCell.xib; sourceTree = "<group>"; };
+		1BDFA22F29ED11B900340837 /* DemoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewController.swift; sourceTree = "<group>"; };
+		1BDFA23129ED12BB00340837 /* ArtistsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsModel.swift; sourceTree = "<group>"; };
+		1BDFA23529ED404B00340837 /* AlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1BDFA23729ED413100340837 /* AlbumsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsModel.swift; sourceTree = "<group>"; };
+		1BDFA23929ED603B00340837 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +125,9 @@
 		1B4E45FA29E90EDA0043A415 /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
+				1BDFA23529ED404B00340837 /* AlbumsCollectionViewCell.swift */,
 				1B4E45FB29E90EF90043A415 /* DemoCollectionViewCell.swift */,
+				1BDFA23129ED12BB00340837 /* ArtistsCollectionViewCell.swift */,
 			);
 			path = CollectionCells;
 			sourceTree = "<group>";
@@ -124,6 +138,8 @@
 				1BDDA25829E6BC8C00D06376 /* FindJobModel.swift */,
 				1B4B6E7429E7D59200CCD5FF /* StateData.swift */,
 				1B8E43FE29E9815B00622504 /* DemoData.swift */,
+				1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */,
+				1BDFA23729ED413100340837 /* AlbumsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +166,8 @@
 				1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */,
 				1BC51A1929E52B4600AC4827 /* SliderViewController.swift */,
 				1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */,
+				1BDFA22F29ED11B900340837 /* DemoCollectionViewController.swift */,
+				1BDFA23929ED603B00340837 /* ImagePickerViewController.swift */,
 			);
 			path = UIComponentsViewControllers;
 			sourceTree = "<group>";
@@ -287,6 +305,7 @@
 			files = (
 				1B65E53829E410DE0090E749 /* TextFieldViewController.swift in Sources */,
 				1B65E53629E40DB30090E749 /* CustomTextField.swift in Sources */,
+				1BDFA23029ED11B900340837 /* DemoCollectionViewController.swift in Sources */,
 				1BDDA25C29E6BE4900D06376 /* CompanyTableCellTableViewCell.swift in Sources */,
 				1BD6D785299CB1C0000B1CE4 /* ViewController.swift in Sources */,
 				1BDDA24929E6AB2600D06376 /* EvenTableViewCell.swift in Sources */,
@@ -303,12 +322,17 @@
 				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
 				1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */,
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
+				1BDFA23229ED12BB00340837 /* ArtistsCollectionViewCell.swift in Sources */,
+				1BDFA23629ED404B00340837 /* AlbumsCollectionViewCell.swift in Sources */,
 				1B8E43F629E949FD00622504 /* LabelExpandTableViewCell.swift in Sources */,
 				1BC51A2229E5796B00AC4827 /* StepperViewController.swift in Sources */,
 				1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */,
 				1B4E45FC29E90EF90043A415 /* DemoCollectionViewCell.swift in Sources */,
+				1BDFA23829ED413100340837 /* AlbumsModel.swift in Sources */,
+				1BDFA23A29ED603B00340837 /* ImagePickerViewController.swift in Sources */,
 				1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */,
 				1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */,
+				1BDFA23429ED1B8F00340837 /* ArtistsModel.swift in Sources */,
 				1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */,
 				1BDDA23D29E68FEC00D06376 /* TableContentViewController.swift in Sources */,
 				1BC51A2029E5701400AC4827 /* SegmentedViewController.swift in Sources */,

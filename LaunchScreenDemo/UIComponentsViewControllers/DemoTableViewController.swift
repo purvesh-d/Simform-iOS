@@ -11,9 +11,19 @@ class DemoTableViewController: UIViewController {
 
     @IBOutlet weak var dataView: UITableView!
     var arrayOfData = DemoData.getData()
+    var refreshData: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.refreshData  = UIRefreshControl()
+        self.refreshData.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        dataView.addSubview(refreshData)
+        dataView.alwaysBounceVertical = true
+        dataView.bounces = true
+    }
+    
+    @objc func loadData() {
+        print("Pull to refresh")
     }
 }
 
@@ -43,8 +53,14 @@ extension DemoTableViewController: UITableViewDataSource {
             return tempColor
         } else if indexPath.section == 2 {
             let newLabel = arrayOfData[indexPath.section].dataName[indexPath.row]
+            dataOfLabel.btnOfData.isSelected = self.arrayOfData[indexPath.row].isExpand
+            dataOfLabel.lblOfData.numberOfLines =  dataOfLabel.btnOfData.isSelected ? 0 : 2
             dataOfLabel.lblOfData.text = "\(newLabel)"
-            dataOfLabel.lblOfData.numberOfLines = 2
+            
+            dataOfLabel.expandLabel = {
+                self.arrayOfData[indexPath.row].isExpand.toggle()
+                tableView.reloadRows(at: [indexPath], with: .automatic)
+            }
             return dataOfLabel
         } else {
             return UITableViewCell()
@@ -56,7 +72,7 @@ extension DemoTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 91
+        return UITableView.automaticDimension
     }
 }
 
@@ -67,13 +83,6 @@ extension DemoTableViewController: UITableViewDelegate {
         if indexPath.section == 1 {
             if let data = tableView.cellForRow(at: indexPath as IndexPath) as? ColorTableViewCell{
                 data.btnSelect.isSelected = true
-            }
-        }
-
-        if indexPath.section == 2 {
-            
-            if let dataOfLabel = tableView.cellForRow(at: indexPath as IndexPath) as? LabelExpandTableViewCell {
-                dataOfLabel.lblOfData.numberOfLines = 0
             }
         }
     }
@@ -87,7 +96,7 @@ extension DemoTableViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-                
+        
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { [self] (_, _, completionHandler) in
             self.arrayOfData[indexPath.section].dataName.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
