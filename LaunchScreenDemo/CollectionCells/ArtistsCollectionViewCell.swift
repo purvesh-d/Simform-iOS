@@ -18,7 +18,7 @@ class ArtistsCollectionViewCell: UICollectionViewCell {
     }
     
     func configureCell(data: ArtistsModel) {
-        imageOfArtists.image = UIImage(named: data.imageData )
+        imageOfArtists.image = UIImage(named: data.imageData ?? "")
         lblOfArtists.text = data.artistsData
     }
 }

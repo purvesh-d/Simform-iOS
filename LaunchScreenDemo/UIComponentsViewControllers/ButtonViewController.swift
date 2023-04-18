@@ -11,6 +11,7 @@ class ButtonViewController: UIViewController {
 
     @IBOutlet weak var camerabtn: UIButton!
     @IBOutlet weak var nextbtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -11,11 +11,23 @@ class DemoCollectionViewController: UIViewController {
 
     @IBOutlet weak var albumsCollectionView: UICollectionView!
     @IBOutlet weak var artistsCollectionView: UICollectionView!
-    var arrayOfArtists = ArtistsModel.getData()
-    var arrayOfAlbums = AlbumsModel.getData()
+    
+    var arrayOfArtists = ArtistsModel.getArtistsData()
+    var arrayOfAlbums = ArtistsModel.getAlbumsData()
+    var refreshData: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.refreshData = UIRefreshControl()
+//        self.refreshData.addTarget(self, action: #selector(loadData),for: .valueChanged)
+//        artistsCollectionView.addSubview(refreshData)
+//        artistsCollectionView.alwaysBounceHorizontal = true
+//        artistsCollectionView.bounces = true
+    }
+    
+    @objc func loadData() {
+        print("")
     }
 }
 
@@ -57,7 +69,7 @@ extension DemoCollectionViewController: UICollectionViewDelegateFlowLayout {
         if collectionView == artistsCollectionView {
             return CGSize(width: collectionView.bounds.width/3, height: 155)
         } else {
-            return CGSize(width: collectionView.bounds.width/3 - 20, height: 200)
+            return CGSize(width: collectionView.bounds.width/3 - 10, height: 200)
         }
     }
     
@@ -65,7 +77,7 @@ extension DemoCollectionViewController: UICollectionViewDelegateFlowLayout {
         if collectionView == albumsCollectionView {
             return 2
         } else {
-            return 0
+            return 1
         }
     }
     

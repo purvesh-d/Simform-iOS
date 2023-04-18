@@ -12,6 +12,7 @@ class ProgressViewController: UIViewController {
     @IBOutlet weak var thirdProgressView: UIProgressView!
     @IBOutlet weak var firstProgressView: UIProgressView!
     @IBOutlet weak var secondProgressView: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +28,6 @@ class ProgressViewController: UIViewController {
         firstProgressView.progress += 0.4
         firstProgressView.setProgress(firstProgressView.progress, animated: true)
     }
-    
     
     @IBAction func btnnext(_ sender: UIButton) {
         thirdProgressView.progress += 0.2

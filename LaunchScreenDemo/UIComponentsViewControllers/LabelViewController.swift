@@ -9,7 +9,8 @@ import UIKit
 
 class LabelViewController: UIViewController {
 
-    @IBOutlet weak var labelhello: UILabel!
+    @IBOutlet private weak var labelhello: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,5 +22,4 @@ class LabelViewController: UIViewController {
         labelhello.clipsToBounds = true
         labelhello.layer.cornerRadius = 5
     }
-    
 }

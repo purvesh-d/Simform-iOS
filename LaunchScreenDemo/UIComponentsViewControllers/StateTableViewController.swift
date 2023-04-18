@@ -9,7 +9,7 @@ import UIKit
 
 class StateTableViewController: UIViewController {
     
-    @IBOutlet weak var stateView: UITableView!
+    @IBOutlet private weak var stateView: UITableView!
     let arrayOfState = StateData.getData()
 
     override func viewDidLoad() {

@@ -9,10 +9,10 @@ import UIKit
 
 class PageControlViewController: UIViewController {
 
-    @IBOutlet weak var firstPageControl: UIPageControl!
-    @IBOutlet weak var secondPageControl: UIPageControl!
-    @IBOutlet weak var thirdPageControl: UIPageControl!
-    @IBOutlet weak var bottompagecontrol: UIPageControl!
+    @IBOutlet private weak var firstPageControl: UIPageControl!
+    @IBOutlet private weak var secondPageControl: UIPageControl!
+    @IBOutlet private weak var thirdPageControl: UIPageControl!
+    @IBOutlet private weak var bottompagecontrol: UIPageControl!
     
    
     override func viewDidLoad() {

@@ -9,7 +9,7 @@ import UIKit
 
 class CollectionViewController: UIViewController {
 
-    @IBOutlet weak var demoCollection: UICollectionView!
+    @IBOutlet private weak var demoCollection: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }

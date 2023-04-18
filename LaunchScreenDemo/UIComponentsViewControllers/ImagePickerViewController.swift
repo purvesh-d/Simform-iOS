@@ -9,7 +9,8 @@ import UIKit
 
 class ImagePickerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet private weak var image: UIImageView!
+    @IBOutlet weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,6 +28,12 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
             return
         }
         self.image.image = img as? UIImage
+        print(info[.editedImage] ?? "")
+        print(info[.cropRect] ?? "")
+        print(info[.imageURL] ?? "")
+        print(info[.mediaMetadata] ?? "")
+        print(info[.mediaType] ?? "")
+        print(info[.mediaURL] ?? "")
         dismiss(animated: true)
     }
 }
