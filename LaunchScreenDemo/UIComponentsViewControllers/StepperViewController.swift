@@ -9,8 +9,9 @@ import UIKit
 
 class StepperViewController: UIViewController {
 
-    @IBOutlet weak var firstStepper: UIStepper!
-    @IBOutlet weak var thirdStepper: UIStepper!
+    @IBOutlet private weak var firstStepper: UIStepper!
+    @IBOutlet private weak var thirdStepper: UIStepper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

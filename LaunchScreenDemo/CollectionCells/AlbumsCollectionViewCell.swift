@@ -18,9 +18,9 @@ class AlbumsCollectionViewCell: UICollectionViewCell {
         imageAlbum.layer.cornerRadius = 10
     }
     
-    func configureCell(data: AlbumsModel) {
-        imageAlbum.image = UIImage(named: data.imageOfAlbum)
-        lblOfAlbum.text = data.lablOfAlbum
+    func configureCell(data: ArtistsModel) {
+        imageAlbum.image = UIImage(named: data.imageData ?? "")
+        lblOfAlbum.text = data.artistsData
         lbldetails.text = data.detailsOfAlbum
     }
 }

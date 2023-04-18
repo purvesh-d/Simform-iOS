@@ -9,7 +9,7 @@ import UIKit
 
 class JobViewController: UIViewController {
 
-    @IBOutlet weak var jobView: UITableView!
+    @IBOutlet private weak var jobView: UITableView!
     var arrCompany = FindJobModel.getCurrentOpening()
     
     override func viewDidLoad() {

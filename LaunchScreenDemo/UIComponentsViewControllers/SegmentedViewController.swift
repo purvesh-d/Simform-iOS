@@ -9,14 +9,13 @@ import UIKit
 
 class SegmentedViewController: UIViewController {
 
-    @IBOutlet weak var lastSegment: UISegmentedControl!
-    
-    @IBOutlet weak var thirdSegmentedControl: UISegmentedControl!
-    @IBOutlet weak var dataview: UITextView!
+    @IBOutlet private weak var lastSegment: UISegmentedControl!
+    @IBOutlet private weak var thirdSegmentedControl: UISegmentedControl!
+    @IBOutlet private weak var dataview: UITextView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
         thirdSegmentedControl.setDividerImage(UIImage(systemName: "trash.fill"), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
     }
     
@@ -34,5 +33,4 @@ class SegmentedViewController: UIViewController {
             print("default case")
         }
     }
-  
 }

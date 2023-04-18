@@ -9,7 +9,7 @@ import UIKit
 
 class DemoTableViewController: UIViewController {
 
-    @IBOutlet weak var dataView: UITableView!
+    @IBOutlet private weak var dataView: UITableView!
     var arrayOfData = DemoData.getData()
     var refreshData: UIRefreshControl!
     
@@ -24,6 +24,7 @@ class DemoTableViewController: UIViewController {
     
     @objc func loadData() {
         print("Pull to refresh")
+        self.refreshData.endRefreshing()
     }
 }
 

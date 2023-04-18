@@ -12,7 +12,6 @@ class SliderViewController: UIViewController {
     @IBOutlet weak var secondSlider: UISlider!
     @IBOutlet weak var slidervolume: UISlider!
     @IBOutlet weak var sliderlabel: UILabel!
-    
     @IBOutlet weak var secondlabel: UILabel!
     
     override func viewDidLoad() {
@@ -40,10 +39,7 @@ class SliderViewController: UIViewController {
         }
     }
     
-   
     @IBAction func secondSliderValueChanged(_ sender: UISlider) {
         secondlabel.text = "\(Int(sender.value))"
     }
-    
-   
 }

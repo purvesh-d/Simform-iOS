@@ -9,7 +9,8 @@ import UIKit
 
 class TextFieldViewController: UIViewController {
 
-    @IBOutlet weak var txtemail: CustomTextField!
+    @IBOutlet private weak var txtemail: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

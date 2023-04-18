@@ -9,7 +9,7 @@ import UIKit
 
 class TableContentViewController: UIViewController {
 
-    @IBOutlet weak var tblContents: UITableView!
+    @IBOutlet private weak var tblContents: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

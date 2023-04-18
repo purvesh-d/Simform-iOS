@@ -53,8 +53,12 @@
 		1BDFA23229ED12BB00340837 /* ArtistsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23129ED12BB00340837 /* ArtistsCollectionViewCell.swift */; };
 		1BDFA23429ED1B8F00340837 /* ArtistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */; };
 		1BDFA23629ED404B00340837 /* AlbumsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23529ED404B00340837 /* AlbumsCollectionViewCell.swift */; };
-		1BDFA23829ED413100340837 /* AlbumsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23729ED413100340837 /* AlbumsModel.swift */; };
 		1BDFA23A29ED603B00340837 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23929ED603B00340837 /* ImagePickerViewController.swift */; };
+		1BE8C0DF29EE769E00FC3632 /* PHPickerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0DE29EE769E00FC3632 /* PHPickerDemoViewController.swift */; };
+		1BE8C0E129EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E029EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift */; };
+		1BE8C0E329EE915300FC3632 /* ActivityIndicatorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */; };
+		1BE8C0E529EEA05C00FC3632 /* WebDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */; };
+		1BE8C0EB29EEA8E300FC3632 /* Demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,8 +111,12 @@
 		1BDFA23129ED12BB00340837 /* ArtistsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsModel.swift; sourceTree = "<group>"; };
 		1BDFA23529ED404B00340837 /* AlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
-		1BDFA23729ED413100340837 /* AlbumsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsModel.swift; sourceTree = "<group>"; };
 		1BDFA23929ED603B00340837 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		1BE8C0DE29EE769E00FC3632 /* PHPickerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerDemoViewController.swift; sourceTree = "<group>"; };
+		1BE8C0E029EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerDataCollectionViewCell.swift; sourceTree = "<group>"; };
+		1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorDemoViewController.swift; sourceTree = "<group>"; };
+		1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDemoViewController.swift; sourceTree = "<group>"; };
+		1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Demo.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +147,6 @@
 				1B4B6E7429E7D59200CCD5FF /* StateData.swift */,
 				1B8E43FE29E9815B00622504 /* DemoData.swift */,
 				1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */,
-				1BDFA23729ED413100340837 /* AlbumsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +175,9 @@
 				1B65E52929E3EB9A0090E749 /* ButtonViewController.swift */,
 				1BDFA22F29ED11B900340837 /* DemoCollectionViewController.swift */,
 				1BDFA23929ED603B00340837 /* ImagePickerViewController.swift */,
+				1BE8C0DE29EE769E00FC3632 /* PHPickerDemoViewController.swift */,
+				1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */,
+				1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */,
 			);
 			path = UIComponentsViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 				1BD6D782299CB1C0000B1CE4 /* SceneDelegate.swift */,
 				1BD6D784299CB1C0000B1CE4 /* ViewController.swift */,
 				1B21DE8029E01823000730B1 /* NewViewController.swift */,
+				1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */,
 				1BD6D786299CB1C0000B1CE4 /* Main.storyboard */,
 				1BD6D789299CB1C1000B1CE4 /* Assets.xcassets */,
 				1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */,
@@ -223,6 +234,7 @@
 				1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */,
 				1B4B6E8029E8159700CCD5FF /* ColorTableViewCell.swift */,
 				1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */,
+				1BE8C0E029EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -291,6 +303,7 @@
 				1BDDA26529E6D07000D06376 /* StateTableViewCell.xib in Resources */,
 				1B48D47329E43D7B00E90B02 /* UIComponents.storyboard in Resources */,
 				1BD6D788299CB1C0000B1CE4 /* Main.storyboard in Resources */,
+				1BE8C0EB29EEA8E300FC3632 /* Demo.pdf in Resources */,
 				1BDDA24A29E6AB2600D06376 /* EvenTableViewCell.xib in Resources */,
 				1BDDA25D29E6BE4900D06376 /* CompanyTableCellTableViewCell.xib in Resources */,
 			);
@@ -320,22 +333,25 @@
 				1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */,
 				1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */,
 				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
+				1BE8C0E129EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift in Sources */,
 				1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */,
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
 				1BDFA23229ED12BB00340837 /* ArtistsCollectionViewCell.swift in Sources */,
 				1BDFA23629ED404B00340837 /* AlbumsCollectionViewCell.swift in Sources */,
+				1BE8C0E529EEA05C00FC3632 /* WebDemoViewController.swift in Sources */,
 				1B8E43F629E949FD00622504 /* LabelExpandTableViewCell.swift in Sources */,
 				1BC51A2229E5796B00AC4827 /* StepperViewController.swift in Sources */,
 				1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */,
 				1B4E45FC29E90EF90043A415 /* DemoCollectionViewCell.swift in Sources */,
-				1BDFA23829ED413100340837 /* AlbumsModel.swift in Sources */,
 				1BDFA23A29ED603B00340837 /* ImagePickerViewController.swift in Sources */,
+				1BE8C0DF29EE769E00FC3632 /* PHPickerDemoViewController.swift in Sources */,
 				1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */,
 				1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */,
 				1BDFA23429ED1B8F00340837 /* ArtistsModel.swift in Sources */,
 				1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */,
 				1BDDA23D29E68FEC00D06376 /* TableContentViewController.swift in Sources */,
 				1BC51A2029E5701400AC4827 /* SegmentedViewController.swift in Sources */,
+				1BE8C0E329EE915300FC3632 /* ActivityIndicatorDemoViewController.swift in Sources */,
 				1B4E45F929E90DD30043A415 /* CollectionViewController.swift in Sources */,
 				1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */,
 				1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */,
