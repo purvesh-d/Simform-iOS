@@ -10,48 +10,66 @@ import WebKit
 
 class WebDemoViewController: UIViewController {
 
+    @IBOutlet private weak var textSearch: UITextField!
     @IBOutlet private weak var webView: WKWebView!
+    @IBOutlet private weak var progressView: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let url = URL(string: "https://www.google.com/") else {
+        progressView.isHidden = true
+        webView.navigationDelegate = self
+        
+//        guard let url = URL(string: "https://www.google.com/") else {
+//            return
+//        }
+//        let urlRequest = URLRequest(url: url)
+//        webView.load(urlRequest)
+        
+        guard let pdfUrl = Bundle.main.url(forResource: "Demo", withExtension: "pdf") else {
             return
         }
-        let urlRequest = URLRequest(url: url)
-        webView.load(urlRequest)
+        webView.loadFileURL(pdfUrl, allowingReadAccessTo: pdfUrl.deletingLastPathComponent())
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             self.webView.reload()
         }
-        
-//        guard let pdfUrl = Bundle.main.url(forResource: "Demo", withExtension: "pdf") else {
-//            return
-//        }
-//        webView.loadFileURL(pdfUrl, allowingReadAccessTo: pdfUrl.deletingLastPathComponent())
         
         let timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(0.1), repeats: true) {
             (timer) in
             print(self.webView.estimatedProgress)
         }
     }
+    
+    @IBAction func btnAction(_ sender: UIButton) {
+        progressView.isHidden = false
+        guard let url = URL(string: textSearch.text ?? "https://www.google.com/") else {
+            return
+        }
+        let urlRequest = URLRequest(url: url)
+        progressView.setProgress(Float(webView.estimatedProgress), animated: true)
+        webView.load(urlRequest)
+    }
 }
 
 extension WebDemoViewController: WKNavigationDelegate {
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if let host = navigationAction.request.url?.host {
-            if host == "www.google.com" {
-                decisionHandler(.allow)
-            }
-        }
-        decisionHandler(.allow)
-    }
+    
+//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+//        if let host = navigationAction.request.url?.host {
+//            if host == "www.google.com" {
+//                decisionHandler(.allow)
+//            }
+//        }
+//        decisionHandler(.cancel)
+//    }
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
        print("start")
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        progressView.setProgress(0.0, animated: false)
+        progressView.isHidden = true
         print("finish")
     }
     
