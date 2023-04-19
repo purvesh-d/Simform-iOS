@@ -9,15 +9,20 @@ import UIKit
 
 class DemoCollectionViewController: UIViewController {
 
-    @IBOutlet weak var albumsCollectionView: UICollectionView!
-    @IBOutlet weak var artistsCollectionView: UICollectionView!
+    @IBOutlet private weak var searchAlbums: UISearchBar!
+    @IBOutlet private weak var albumsCollectionView: UICollectionView!
+    @IBOutlet private weak var artistsCollectionView: UICollectionView!
     
     var arrayOfArtists = ArtistsModel.getArtistsData()
     var arrayOfAlbums = ArtistsModel.getAlbumsData()
     var refreshData: UIRefreshControl!
+    var searchResult: [ArtistsModel] = []
+    var isSearchActive: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchAlbums.autocapitalizationType = .none
         
 //        self.refreshData = UIRefreshControl()
 //        self.refreshData.addTarget(self, action: #selector(loadData),for: .valueChanged)
@@ -25,10 +30,9 @@ class DemoCollectionViewController: UIViewController {
 //        artistsCollectionView.alwaysBounceHorizontal = true
 //        artistsCollectionView.bounces = true
     }
-    
-    @objc func loadData() {
-        print("")
-    }
+//    @objc func loadData() {
+//        self.refreshData.endRefreshing()
+//    }
 }
 
 extension DemoCollectionViewController: UICollectionViewDataSource {
@@ -37,7 +41,7 @@ extension DemoCollectionViewController: UICollectionViewDataSource {
         if collectionView == artistsCollectionView {
             return arrayOfArtists.count
         } else {
-            return arrayOfAlbums.count
+            return isSearchActive == true ? searchResult.count : arrayOfAlbums.count
         }
     }
     
@@ -55,8 +59,7 @@ extension DemoCollectionViewController: UICollectionViewDataSource {
             guard let albumsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumsCollectionViewCell", for: indexPath) as? AlbumsCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            print(indexPath.row)
-            let newData = arrayOfAlbums[indexPath.row]
+            let newData = isSearchActive == true ? searchResult[indexPath.row] : arrayOfAlbums[indexPath.row]
             albumsCell.configureCell(data: newData)
             return albumsCell
         }
@@ -67,7 +70,7 @@ extension DemoCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == artistsCollectionView {
-            return CGSize(width: collectionView.bounds.width/3, height: 155)
+            return CGSize(width: collectionView.bounds.width/3 - 10, height: 155)
         } else {
             return CGSize(width: collectionView.bounds.width/3 - 10, height: 200)
         }
@@ -90,3 +93,16 @@ extension DemoCollectionViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
+extension DemoCollectionViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        searchResult = searchText.isEmpty ? arrayOfAlbums : arrayOfAlbums.filter { $0.artistsData?.contains(searchText) ?? false}
+        if (searchResult.count == 0) {
+            isSearchActive = false
+        } else {
+            isSearchActive = true
+        }
+        self.albumsCollectionView.reloadData()
+    }
+}

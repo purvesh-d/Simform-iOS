@@ -24,17 +24,17 @@ struct ArtistsModel {
     
     static func getAlbumsData() -> [ArtistsModel] {
         return [ArtistsModel(imageData: "album1", artistsData: "August Burns Red", detailsOfAlbum: "Death below"),
-                ArtistsModel(imageData: "album2", artistsData: "August Burns Red", detailsOfAlbum: "Messangers"),
+                ArtistsModel(imageData: "album2", artistsData: "Breakdown Sanity", detailsOfAlbum: "Messangers"),
+                ArtistsModel(imageData: "album3", artistsData: "One Direction", detailsOfAlbum: "Found in Fear"),
+                ArtistsModel(imageData: "album4", artistsData: "NSYNC", detailsOfAlbum: "Home"),
+                ArtistsModel(imageData: "album1", artistsData: "BTS", detailsOfAlbum: "Death below"),
+                ArtistsModel(imageData: "album2", artistsData: "The Andrews Sisters.", detailsOfAlbum: "Messangers"),
+                ArtistsModel(imageData: "album3", artistsData: "Blackpink", detailsOfAlbum: "Found in Fear"),
+                ArtistsModel(imageData: "album4", artistsData: "Stage Revolution", detailsOfAlbum: "Home"),
+                ArtistsModel(imageData: "album1", artistsData: "Afternoon Daydream", detailsOfAlbum: "Death below"),
+                ArtistsModel(imageData: "album2", artistsData: "Double Helix", detailsOfAlbum: "Messangers"),
                 ArtistsModel(imageData: "album3", artistsData: "August Burns Red", detailsOfAlbum: "Found in Fear"),
-                ArtistsModel(imageData: "album4", artistsData: "August Burns Red", detailsOfAlbum: "Home"),
-                ArtistsModel(imageData: "album1", artistsData: "August Burns Red", detailsOfAlbum: "Death below"),
-                ArtistsModel(imageData: "album2", artistsData: "August Burns Red", detailsOfAlbum: "Messangers"),
-                ArtistsModel(imageData: "album3", artistsData: "August Burns Red", detailsOfAlbum: "Found in Fear"),
-                ArtistsModel(imageData: "album4", artistsData: "August Burns Red", detailsOfAlbum: "Home"),
-                ArtistsModel(imageData: "album1", artistsData: "August Burns Red", detailsOfAlbum: "Death below"),
-                ArtistsModel(imageData: "album2", artistsData: "August Burns Red", detailsOfAlbum: "Messangers"),
-                ArtistsModel(imageData: "album3", artistsData: "August Burns Red", detailsOfAlbum: "Found in Fear"),
-                ArtistsModel(imageData: "album4", artistsData: "August Burns Red", detailsOfAlbum: "Home")
+                ArtistsModel(imageData: "album4", artistsData: "The Andrews Sisters.", detailsOfAlbum: "Home")
         ]
     }
 }
