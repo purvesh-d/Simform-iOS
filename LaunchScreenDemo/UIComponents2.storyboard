@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n82-8m-Qm5">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contacts View Controller-->
+        <scene sceneID="cbo-Xb-OvA">
+            <objects>
+                <viewController id="d0h-AX-RtB" customClass="ContactsViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YV1-CA-TmI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXc-nL-C4A">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LL8-cJ-aA2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CXc-nL-C4A" firstAttribute="top" secondItem="LL8-cJ-aA2" secondAttribute="top" id="0BP-5j-Gwp"/>
+                            <constraint firstItem="CXc-nL-C4A" firstAttribute="leading" secondItem="LL8-cJ-aA2" secondAttribute="leading" id="73e-Jh-85C"/>
+                            <constraint firstItem="LL8-cJ-aA2" firstAttribute="bottom" secondItem="CXc-nL-C4A" secondAttribute="bottom" id="BsA-nt-RTi"/>
+                            <constraint firstItem="LL8-cJ-aA2" firstAttribute="trailing" secondItem="CXc-nL-C4A" secondAttribute="trailing" id="JKN-Fr-myS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="MmR-bA-72e"/>
+                    <connections>
+                        <outlet property="pdfWebView" destination="CXc-nL-C4A" id="etZ-NW-Vm4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojC-VE-chC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414.50381679389312" y="-854.22535211267609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nAb-lK-4rv">
+            <objects>
+                <viewController id="jay-X8-wyc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k8M-bJ-4Hv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UwZ-1J-Y4j"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="3" systemItem="recents" id="983-Ca-7BP">
+                        <color key="badgeColor" systemColor="systemPinkColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WH6-93-uLY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.03053435114504" y="-186.61971830985917"/>
+        </scene>
+        <!--Tool Bar Demo View Controller-->
+        <scene sceneID="fWa-uZ-HRq">
+            <objects>
+                <viewController id="n82-8m-Qm5" customClass="ToolBarDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HDB-aD-0SJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="lDK-oG-H10">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <barButtonItem image="chevron.left" catalog="system" style="done" id="13r-5n-lu1">
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="backButtonAction:" destination="n82-8m-Qm5" id="Ma2-Jw-ycO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4Ca-M9-nzd"/>
+                                    <barButtonItem image="chevron.right" catalog="system" id="rCo-fO-2JU">
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="forwardButtonAction:" destination="n82-8m-Qm5" id="Ysq-Qy-xjm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KGb-f6-8ay"/>
+                                    <barButtonItem systemItem="refresh" id="a9p-U3-NHd">
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="refreshItems:" destination="n82-8m-Qm5" id="yT4-bH-i7i"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" systemColor="systemOrangeColor"/>
+                            </toolbar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQk-Sy-a0f">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NIx-il-yUf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NIx-il-yUf" firstAttribute="trailing" secondItem="lDK-oG-H10" secondAttribute="trailing" id="Fkh-9G-rOb"/>
+                            <constraint firstItem="hQk-Sy-a0f" firstAttribute="top" secondItem="lDK-oG-H10" secondAttribute="bottom" id="UJP-IR-wXe"/>
+                            <constraint firstItem="lDK-oG-H10" firstAttribute="top" secondItem="NIx-il-yUf" secondAttribute="top" id="Y8c-yH-GCj"/>
+                            <constraint firstItem="NIx-il-yUf" firstAttribute="bottom" secondItem="hQk-Sy-a0f" secondAttribute="bottom" id="c9a-dT-EYi"/>
+                            <constraint firstItem="lDK-oG-H10" firstAttribute="leading" secondItem="NIx-il-yUf" secondAttribute="leading" id="i2C-V4-0hH"/>
+                            <constraint firstItem="hQk-Sy-a0f" firstAttribute="leading" secondItem="NIx-il-yUf" secondAttribute="leading" id="x7h-B4-JhT"/>
+                            <constraint firstItem="NIx-il-yUf" firstAttribute="trailing" secondItem="hQk-Sy-a0f" secondAttribute="trailing" id="ynR-LQ-X7p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="hQk-Sy-a0f" id="1n6-07-7hp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufv-ij-che" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381" y="-187"/>
+        </scene>
+        <!--More View Controller-->
+        <scene sceneID="GBt-LJ-6n8">
+            <objects>
+                <viewController id="Grd-Aw-Zrw" customClass="MoreViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D4b-4e-iqG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="i3f-Cg-txw"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="fsM-Bx-hQk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2NN-UR-ETm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="546"/>
+        </scene>
+        <!--Tab Bar Demo View Controller-->
+        <scene sceneID="2G5-nr-oz8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u0j-w0-dRK" customClass="TabBarDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mQM-bd-osH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jay-X8-wyc" kind="relationship" relationship="viewControllers" id="3ie-mf-y81"/>
+                        <segue destination="d0h-AX-RtB" kind="relationship" relationship="viewControllers" id="l6i-9h-i8f"/>
+                        <segue destination="Grd-Aw-Zrw" kind="relationship" relationship="viewControllers" id="9Wf-V2-GxJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eof-5I-1we" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510.68702290076334" y="-186.61971830985917"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

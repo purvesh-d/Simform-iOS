@@ -55,7 +55,7 @@ extension SearchBarDemoViewController: UICollectionViewDelegateFlowLayout {
 extension SearchBarDemoViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchResult = searchText.isEmpty ? arrayOLabels : arrayOLabels.filter {$0.contains(searchText)}
+        searchResult = searchText.isEmpty ? arrayOLabels : arrayOLabels.filter { $0.range(of: searchText, options: .literal) != nil}
         if (searchResult.count == 0) {
             isSearchActive = false
         } else {
