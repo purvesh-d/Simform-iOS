@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21DE8029E01823000730B1 /* NewViewController.swift */; };
+		1B37605629F0FD5D000D4107 /* UIComponents2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B37605529F0FD5D000D4107 /* UIComponents2.storyboard */; };
+		1B37605929F109F0000D4107 /* TabBarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B37605829F109F0000D4107 /* TabBarDemoViewController.swift */; };
+		1B37605D29F1102C000D4107 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B37605C29F1102C000D4107 /* ContactsViewController.swift */; };
+		1B37605F29F11050000D4107 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B37605E29F11050000D4107 /* MoreViewController.swift */; };
+		1B37606129F1191C000D4107 /* StackViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B37606029F1191C000D4107 /* StackViewDemoViewController.swift */; };
 		1B48D47329E43D7B00E90B02 /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */; };
 		1B4B6E7529E7D59200CCD5FF /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7429E7D59200CCD5FF /* StateData.swift */; };
 		1B4B6E7929E8018C00CCD5FF /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */; };
@@ -23,6 +28,7 @@
 		1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53929E4165A0090E749 /* TextViewController.swift */; };
 		1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53B29E41CFF0090E749 /* CustomTextView.swift */; };
 		1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B65E53D29E420B30090E749 /* SwitchViewController.swift */; };
+		1B790B0429F15A3F00E9A247 /* ToolBarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B790B0329F15A3F00E9A247 /* ToolBarDemoViewController.swift */; };
 		1B8E43F629E949FD00622504 /* LabelExpandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */; };
 		1B8E43FF29E9815B00622504 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E43FE29E9815B00622504 /* DemoData.swift */; };
 		1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1929E52B4600AC4827 /* SliderViewController.swift */; };
@@ -65,6 +71,11 @@
 
 /* Begin PBXFileReference section */
 		1B21DE8029E01823000730B1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		1B37605529F0FD5D000D4107 /* UIComponents2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents2.storyboard; sourceTree = "<group>"; };
+		1B37605829F109F0000D4107 /* TabBarDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDemoViewController.swift; sourceTree = "<group>"; };
+		1B37605C29F1102C000D4107 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		1B37605E29F11050000D4107 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		1B37606029F1191C000D4107 /* StackViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewDemoViewController.swift; sourceTree = "<group>"; };
 		1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
 		1B4B6E7429E7D59200CCD5FF /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
 		1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +91,7 @@
 		1B65E53929E4165A0090E749 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1B65E53B29E41CFF0090E749 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		1B65E53D29E420B30090E749 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		1B790B0329F15A3F00E9A247 /* ToolBarDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarDemoViewController.swift; sourceTree = "<group>"; };
 		1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExpandTableViewCell.swift; sourceTree = "<group>"; };
 		1B8E43FE29E9815B00622504 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		1BC51A1929E52B4600AC4827 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +146,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B37605729F109B1000D4107 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1B37605829F109F0000D4107 /* TabBarDemoViewController.swift */,
+				1B37605C29F1102C000D4107 /* ContactsViewController.swift */,
+				1B37605E29F11050000D4107 /* MoreViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		1B4E45FA29E90EDA0043A415 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +182,7 @@
 		1B8E43FB29E97FD900622504 /* UIComponentsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B37605729F109B1000D4107 /* TabBar */,
 				1B65E52729E3EAED0090E749 /* LabelViewController.swift */,
 				1BC51A2129E5796B00AC4827 /* StepperViewController.swift */,
 				1BC51A1F29E5701400AC4827 /* SegmentedViewController.swift */,
@@ -185,6 +208,8 @@
 				1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */,
 				1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */,
 				1BCD825429EFAF10007D9A4C /* SearchBarDemoViewController.swift */,
+				1B37606029F1191C000D4107 /* StackViewDemoViewController.swift */,
+				1B790B0329F15A3F00E9A247 /* ToolBarDemoViewController.swift */,
 			);
 			path = UIComponentsViewControllers;
 			sourceTree = "<group>";
@@ -219,6 +244,7 @@
 				1BD6D78B299CB1C1000B1CE4 /* LaunchScreen.storyboard */,
 				1BD6D78E299CB1C1000B1CE4 /* Info.plist */,
 				1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */,
+				1B37605529F0FD5D000D4107 /* UIComponents2.storyboard */,
 				1B8E43FB29E97FD900622504 /* UIComponentsViewControllers */,
 				1B4E45FA29E90EDA0043A415 /* CollectionViewCells */,
 				1BDDA24229E693FE00D06376 /* TableViewCells */,
@@ -304,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BDDA24629E6942F00D06376 /* IndexTableViewCell.xib in Resources */,
+				1B37605629F0FD5D000D4107 /* UIComponents2.storyboard in Resources */,
 				1BD6D78D299CB1C1000B1CE4 /* LaunchScreen.storyboard in Resources */,
 				1BD6D78A299CB1C1000B1CE4 /* Assets.xcassets in Resources */,
 				1BDDA26529E6D07000D06376 /* StateTableViewCell.xib in Resources */,
@@ -332,20 +359,25 @@
 				1BDDA25F29E6C12400D06376 /* JobViewController.swift in Sources */,
 				1BDDA23B29E6618800D06376 /* CustomSegmentControl.swift in Sources */,
 				1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */,
+				1B37605D29F1102C000D4107 /* ContactsViewController.swift in Sources */,
 				1B4B6E8129E8159700CCD5FF /* ColorTableViewCell.swift in Sources */,
 				1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */,
 				1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */,
+				1B37605929F109F0000D4107 /* TabBarDemoViewController.swift in Sources */,
 				1B4E45FE29E914A40043A415 /* CollectionImageViewController.swift in Sources */,
 				1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */,
 				1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */,
 				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
 				1BE8C0E129EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift in Sources */,
 				1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */,
+				1B37605F29F11050000D4107 /* MoreViewController.swift in Sources */,
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
 				1BDFA23229ED12BB00340837 /* ArtistsCollectionViewCell.swift in Sources */,
 				1BC9E7DA29EFBBD700C8B154 /* SearchBarCollectionViewCell.swift in Sources */,
 				1BDFA23629ED404B00340837 /* AlbumsCollectionViewCell.swift in Sources */,
 				1BE8C0E529EEA05C00FC3632 /* WebDemoViewController.swift in Sources */,
+				1B790B0429F15A3F00E9A247 /* ToolBarDemoViewController.swift in Sources */,
+				1B37606129F1191C000D4107 /* StackViewDemoViewController.swift in Sources */,
 				1B8E43F629E949FD00622504 /* LabelExpandTableViewCell.swift in Sources */,
 				1BC51A2229E5796B00AC4827 /* StepperViewController.swift in Sources */,
 				1BCD825529EFAF10007D9A4C /* SearchBarDemoViewController.swift in Sources */,

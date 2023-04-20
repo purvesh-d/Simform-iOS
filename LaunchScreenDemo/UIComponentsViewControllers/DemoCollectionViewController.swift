@@ -70,7 +70,7 @@ extension DemoCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == artistsCollectionView {
-            return CGSize(width: collectionView.bounds.width/3 - 10, height: 155)
+            return CGSize(width: collectionView.bounds.width/3 - 20, height: 155)
         } else {
             return CGSize(width: collectionView.bounds.width/3 - 10, height: 200)
         }
@@ -97,7 +97,12 @@ extension DemoCollectionViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        searchResult = searchText.isEmpty ? arrayOfAlbums : arrayOfAlbums.filter { $0.artistsData?.contains(searchText) ?? false}
+        //searchResult = searchText.isEmpty ? arrayOfAlbums : arrayOfAlbums.filter { $0.artistsData?.contains(searchText) ?? false}
+        
+        searchResult = searchText.isEmpty ? arrayOfAlbums : arrayOfAlbums.filter {
+            $0.artistsData?.range(of: searchText, options: .literal) != nil
+        }
+     
         if (searchResult.count == 0) {
             isSearchActive = false
         } else {
