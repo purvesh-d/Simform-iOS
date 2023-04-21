@@ -11,10 +11,11 @@ import WebKit
 class ToolBarDemoViewController: UIViewController, WKNavigationDelegate {
 
     @IBOutlet private weak var webView: WKWebView!
+    @IBOutlet private weak var toolbar: UIToolbar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         webView.navigationDelegate = self
         guard let url = URL(string: "https://www.google.com/") else {
             return
