@@ -14,6 +14,7 @@ class TabBarDemoViewController: UITabBarController {
         
         self.delegate = self
         self.selectedIndex = 1
+        self.tabBar.items?[1].badgeValue = "3"
     }
 }
 
@@ -24,6 +25,7 @@ extension TabBarDemoViewController: UITabBarControllerDelegate {
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        tabBar.items?[1].badgeValue = nil
         print("tab bar selected")
     }
     
