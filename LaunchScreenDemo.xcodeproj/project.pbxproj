@@ -70,6 +70,7 @@
 		1BE8C0E329EE915300FC3632 /* ActivityIndicatorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */; };
 		1BE8C0E529EEA05C00FC3632 /* WebDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */; };
 		1BE8C0EB29EEA8E300FC3632 /* Demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */; };
+		1BF4D7B229F63BB500770E98 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D7B129F63BB500770E98 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +140,7 @@
 		1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorDemoViewController.swift; sourceTree = "<group>"; };
 		1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDemoViewController.swift; sourceTree = "<group>"; };
 		1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Demo.pdf; sourceTree = "<group>"; };
+		1BF4D7B129F63BB500770E98 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				1BE4BDE929F2563F00F946B5 /* ToolBarPropertyDemoViewController.swift */,
 				1BE4BDEB29F2609000F946B5 /* PickerDemoViewController.swift */,
 				1B37825229F293CB00E01236 /* DatePickerDemoViewController.swift */,
+				1BF4D7B129F63BB500770E98 /* MapViewController.swift */,
 			);
 			path = UIComponentsViewControllers;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				1B4E45F929E90DD30043A415 /* CollectionViewController.swift in Sources */,
 				1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */,
 				1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */,
+				1BF4D7B229F63BB500770E98 /* MapViewController.swift in Sources */,
 				1B8E43FF29E9815B00622504 /* DemoData.swift in Sources */,
 				1BDDA25929E6BC8C00D06376 /* FindJobModel.swift in Sources */,
 				1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */,
@@ -562,6 +566,8 @@
 				INFOPLIST_FILE = LaunchScreenDemo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = " ";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "location always and when in use";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "location when in use";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -592,6 +598,8 @@
 				INFOPLIST_FILE = LaunchScreenDemo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = " ";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "location always and when in use";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "location when in use";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

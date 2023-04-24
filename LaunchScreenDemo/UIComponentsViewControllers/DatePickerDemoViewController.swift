@@ -24,7 +24,7 @@ class DatePickerDemoViewController: UIViewController, UITextFieldDelegate {
     let dateFormatter = DateFormatter()
     
     var arrayOfState = ["Andhra Pradesh","Assam", "Bihar", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Karnataka", "Kerala", "Manipur", "Meghalaya", "Odisha", "Punjab"]
-    var arrayOfImages = [UIImage(named: "background"), UIImage(named: "august"), UIImage(named: "facebook")]
+    var arrayOfImages = [UIImage(systemName: "trash"), UIImage(systemName: "heart.fill"),UIImage(systemName: "folder.fill"), UIImage(systemName: "paperplane.fill"), UIImage(systemName: "book.fill")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +40,11 @@ class DatePickerDemoViewController: UIViewController, UITextFieldDelegate {
         imageTextfield.delegate = self
         
         timePicker.datePickerMode = .time
+        timePicker.locale = Locale(identifier: "en_GB")
         timePicker.preferredDatePickerStyle = .wheels
         datePicker.datePickerMode = .date
+        let currentdate = Date()
+        datePicker.minimumDate = currentdate
         datePicker.preferredDatePickerStyle = .wheels
         
         setTimeData()
@@ -68,9 +71,9 @@ class DatePickerDemoViewController: UIViewController, UITextFieldDelegate {
     
     @objc func timeDoneAction() {
         dateFormatter.dateFormat = "HH:mm"
-        let resultOfTime = dateFormatter.string(from: timePicker.date)
-        timeTextfield.text = resultOfTime
-        dateTextfield.resignFirstResponder()
+        let timeData = dateFormatter.string(from: timePicker.date)
+        timeTextfield.text = timeData
+        timeTextfield.resignFirstResponder()
     }
     
     private func setDateData() {
@@ -90,9 +93,9 @@ class DatePickerDemoViewController: UIViewController, UITextFieldDelegate {
     
     @objc func dateDoneAction() {
         dateFormatter.dateFormat = "MM/dd/yy"
-        let resultOfDate = dateFormatter.string(from: datePicker.date)
-        dateTextfield.text = resultOfDate
-        timeTextfield.resignFirstResponder()
+        let dateData = dateFormatter.string(from: datePicker.date)
+        dateTextfield.text = dateData
+        dateTextfield.resignFirstResponder()
     }
     
     private func setStateData() {
@@ -125,11 +128,11 @@ class DatePickerDemoViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func imageCancelAction() {
+        imageView.image = nil
         imageTextfield.resignFirstResponder()
     }
     
     @objc func imageDoneAction() {
-
         imageTextfield.resignFirstResponder()
     }
 }
@@ -141,7 +144,11 @@ extension DatePickerDemoViewController: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return arrayOfState.count
+        if pickerView == statePicker {
+            return arrayOfState.count
+        } else {
+            return arrayOfImages.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -156,30 +163,35 @@ extension DatePickerDemoViewController: UIPickerViewDataSource {
 extension DatePickerDemoViewController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return arrayOfState[row]
+        if pickerView == statePicker {
+            return arrayOfState[row]
+        } else {
+            return ""
+        }
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         if pickerView == imageView {
             return 200
         } else {
-            return 25
+            return 50
         }
     }
     
-//    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
-//        if pickerView == imagePicker {
-//            let imageViewOf = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-//            let imagesOf = UIImageView(frame: CGRect(x: 0, y: 0, width: 25, height: 25))
-//            imagesOf.image = arrayOfImages[row]
-//            imageViewOf.addSubview(imagesOf)
-//            return imageViewOf
-//        }
-//        let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-//        let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 50) )
-//        label.textAlignment = .center
-//        label.text = arrayOfState[row]
-//        view.addSubview(label)
-//        return view
-//    }
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        if pickerView == imagePicker {
+            let imageViewOf = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+            let imagesOf = UIImageView(frame: CGRect(x: 0, y: 0, width: 25, height: 40))
+            imagesOf.image = arrayOfImages[row]
+            imageViewOf.addSubview(imagesOf)
+            return imageViewOf
+        }
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 50) )
+        label.textAlignment = .center
+        label.text = arrayOfState[row]
+        view.addSubview(label)
+        return view
+    }
 }
