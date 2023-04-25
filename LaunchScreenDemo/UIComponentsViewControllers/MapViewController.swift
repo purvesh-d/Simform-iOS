@@ -10,11 +10,11 @@ import MapKit
 
 class MapViewController: UIViewController {
 
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet private weak var mapView: MKMapView!
     var locationManager = CLLocationManager()
     var officeLocation = CLLocationCoordinate2D(latitude: 23.024650718994916, longitude: 72.50320354520784)
     var hotelLocation = CLLocationCoordinate2D(latitude: 23.02704165876138, longitude: 72.50822388559817)
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

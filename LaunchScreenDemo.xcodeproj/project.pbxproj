@@ -32,6 +32,9 @@
 		1B790B0429F15A3F00E9A247 /* ToolBarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B790B0329F15A3F00E9A247 /* ToolBarDemoViewController.swift */; };
 		1B8E43F629E949FD00622504 /* LabelExpandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */; };
 		1B8E43FF29E9815B00622504 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E43FE29E9815B00622504 /* DemoData.swift */; };
+		1BC095BF29F7A6250042ED7A /* SegueFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC095BE29F7A6250042ED7A /* SegueFirstViewController.swift */; };
+		1BC095C129F7A7EB0042ED7A /* SegueSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC095C029F7A7EB0042ED7A /* SegueSecondViewController.swift */; };
+		1BC095C329F7C8F40042ED7A /* ButtonPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC095C229F7C8F40042ED7A /* ButtonPropertiesViewController.swift */; };
 		1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1929E52B4600AC4827 /* SliderViewController.swift */; };
 		1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */; };
 		1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */; };
@@ -99,6 +102,9 @@
 		1B790B0329F15A3F00E9A247 /* ToolBarDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarDemoViewController.swift; sourceTree = "<group>"; };
 		1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExpandTableViewCell.swift; sourceTree = "<group>"; };
 		1B8E43FE29E9815B00622504 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		1BC095BE29F7A6250042ED7A /* SegueFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFirstViewController.swift; sourceTree = "<group>"; };
+		1BC095C029F7A7EB0042ED7A /* SegueSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueSecondViewController.swift; sourceTree = "<group>"; };
+		1BC095C229F7C8F40042ED7A /* ButtonPropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPropertiesViewController.swift; sourceTree = "<group>"; };
 		1BC51A1929E52B4600AC4827 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +228,9 @@
 				1BE4BDEB29F2609000F946B5 /* PickerDemoViewController.swift */,
 				1B37825229F293CB00E01236 /* DatePickerDemoViewController.swift */,
 				1BF4D7B129F63BB500770E98 /* MapViewController.swift */,
+				1BC095BE29F7A6250042ED7A /* SegueFirstViewController.swift */,
+				1BC095C029F7A7EB0042ED7A /* SegueSecondViewController.swift */,
+				1BC095C229F7C8F40042ED7A /* ButtonPropertiesViewController.swift */,
 			);
 			path = UIComponentsViewControllers;
 			sourceTree = "<group>";
@@ -378,6 +387,7 @@
 				1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */,
 				1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */,
 				1B37605929F109F0000D4107 /* TabBarDemoViewController.swift in Sources */,
+				1BC095BF29F7A6250042ED7A /* SegueFirstViewController.swift in Sources */,
 				1B4E45FE29E914A40043A415 /* CollectionImageViewController.swift in Sources */,
 				1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */,
 				1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */,
@@ -411,8 +421,10 @@
 				1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */,
 				1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */,
 				1BF4D7B229F63BB500770E98 /* MapViewController.swift in Sources */,
+				1BC095C129F7A7EB0042ED7A /* SegueSecondViewController.swift in Sources */,
 				1B8E43FF29E9815B00622504 /* DemoData.swift in Sources */,
 				1BDDA25929E6BC8C00D06376 /* FindJobModel.swift in Sources */,
+				1BC095C329F7C8F40042ED7A /* ButtonPropertiesViewController.swift in Sources */,
 				1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */,
 				1B4B6E7929E8018C00CCD5FF /* DemoTableViewController.swift in Sources */,
 			);

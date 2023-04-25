@@ -9,10 +9,10 @@ import UIKit
 
 class SliderViewController: UIViewController {
 
-    @IBOutlet weak var secondSlider: UISlider!
-    @IBOutlet weak var slidervolume: UISlider!
-    @IBOutlet weak var sliderlabel: UILabel!
-    @IBOutlet weak var secondlabel: UILabel!
+    @IBOutlet private weak var secondSlider: UISlider!
+    @IBOutlet private weak var slidervolume: UISlider!
+    @IBOutlet private weak var sliderlabel: UILabel!
+    @IBOutlet private weak var secondlabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -15,7 +15,6 @@ class DemoCollectionViewController: UIViewController {
     
     var arrayOfArtists = ArtistsModel.getArtistsData()
     var arrayOfAlbums = ArtistsModel.getAlbumsData()
-    var refreshData: UIRefreshControl!
     var searchResult: [ArtistsModel] = []
     var isSearchActive: Bool = false
     
@@ -23,16 +22,7 @@ class DemoCollectionViewController: UIViewController {
         super.viewDidLoad()
         
         searchAlbums.autocapitalizationType = .none
-        
-//        self.refreshData = UIRefreshControl()
-//        self.refreshData.addTarget(self, action: #selector(loadData),for: .valueChanged)
-//        artistsCollectionView.addSubview(refreshData)
-//        artistsCollectionView.alwaysBounceHorizontal = true
-//        artistsCollectionView.bounces = true
     }
-//    @objc func loadData() {
-//        self.refreshData.endRefreshing()
-//    }
 }
 
 extension DemoCollectionViewController: UICollectionViewDataSource {
@@ -96,8 +86,6 @@ extension DemoCollectionViewController: UICollectionViewDelegateFlowLayout {
 extension DemoCollectionViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        //searchResult = searchText.isEmpty ? arrayOfAlbums : arrayOfAlbums.filter { $0.artistsData?.contains(searchText) ?? false}
         
         searchResult = searchText.isEmpty ? arrayOfAlbums : arrayOfAlbums.filter {
             $0.artistsData?.range(of: searchText, options: .literal) != nil

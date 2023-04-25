@@ -20,11 +20,12 @@ class WebDemoViewController: UIViewController {
         progressView.isHidden = true
         webView.navigationDelegate = self
         
-//        guard let url = URL(string: "https://www.google.com/") else {
-//            return
-//        }
-//        let urlRequest = URLRequest(url: url)
-//        webView.load(urlRequest)
+        //load function in webView
+        /*guard let url = URL(string: "https://www.google.com/") else {
+            return
+        }
+        let urlRequest = URLRequest(url: url)
+        webView.load(urlRequest)*/
         
         guard let pdfUrl = Bundle.main.url(forResource: "Demo", withExtension: "pdf") else {
             return
@@ -54,14 +55,15 @@ class WebDemoViewController: UIViewController {
 
 extension WebDemoViewController: WKNavigationDelegate {
     
-//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-//        if let host = navigationAction.request.url?.host {
-//            if host == "www.google.com" {
-//                decisionHandler(.allow)
-//            }
-//        }
-//        decisionHandler(.cancel)
-//    }
+    //restrict sites
+    /*func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        if let host = navigationAction.request.url?.host {
+            if host == "www.google.com" {
+                decisionHandler(.allow)
+            }
+        }
+        decisionHandler(.cancel)
+    }*/
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
        print("start")

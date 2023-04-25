@@ -9,8 +9,9 @@ import UIKit
 
 class SearchBarDemoViewController: UIViewController {
 
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var searchCollectionView: UICollectionView!
+    
     var arrayOLabels = ["The Vampire Diaries", "Ted Lasso", "Legacies", "Orignals", "the family man", "Ray", "candy", "Mumbai Diaries", "November Story", "Grahan", "Money Heist", "Squid Game", "Friends", "Vikings"]
     var searchResult: [String] = []
     var isSearchActive: Bool = false
@@ -20,7 +21,6 @@ class SearchBarDemoViewController: UIViewController {
         searchBar.setImage(UIImage(systemName: "folder"), for: UISearchBar.Icon.search, state: .normal)
         searchBar.setImage(UIImage(systemName: "trash"), for: UISearchBar.Icon.clear, state: .normal)
         searchBar.autocapitalizationType = .none
-        
     }
 }
 
@@ -38,8 +38,6 @@ extension SearchBarDemoViewController: UICollectionViewDataSource {
         labelCell.lblData.text = isSearchActive == true ? searchResult[indexPath.row] : arrayOLabels[indexPath.row]
         return labelCell
     }
-    
-    
 }
 
 extension SearchBarDemoViewController: UICollectionViewDelegateFlowLayout {
@@ -55,7 +53,8 @@ extension SearchBarDemoViewController: UICollectionViewDelegateFlowLayout {
 extension SearchBarDemoViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchResult = searchText.isEmpty ? arrayOLabels : arrayOLabels.filter { $0.range(of: searchText, options: .literal) != nil}
+        searchResult = searchText.isEmpty ? arrayOLabels : arrayOLabels.filter { $0.localizedCaseInsensitiveContains(searchText)}
+        
         if (searchResult.count == 0) {
             isSearchActive = false
         } else {
@@ -79,5 +78,4 @@ extension SearchBarDemoViewController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         print("End editing")
     }
-
 }

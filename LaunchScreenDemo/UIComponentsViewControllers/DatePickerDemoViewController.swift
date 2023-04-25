@@ -10,11 +10,11 @@ import UIKit
 class DatePickerDemoViewController: UIViewController, UITextFieldDelegate {
     
   
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var imageTextfield: UITextField!
-    @IBOutlet weak var stateTextfield: UITextField!
-    @IBOutlet weak var dateTextfield: UITextField!
-    @IBOutlet weak var timeTextfield: UITextField!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var imageTextfield: UITextField!
+    @IBOutlet private weak var stateTextfield: UITextField!
+    @IBOutlet private weak var dateTextfield: UITextField!
+    @IBOutlet private weak var timeTextfield: UITextField!
     
     let timePicker = UIDatePicker()
     let datePicker = UIDatePicker()
