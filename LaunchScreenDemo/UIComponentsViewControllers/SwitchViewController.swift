@@ -11,7 +11,7 @@ class SwitchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+    
     }
     
     @IBAction func switchon(_ sender: UISwitch) {

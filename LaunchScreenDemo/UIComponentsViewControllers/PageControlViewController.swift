@@ -14,7 +14,6 @@ class PageControlViewController: UIViewController {
     @IBOutlet private weak var thirdPageControl: UIPageControl!
     @IBOutlet private weak var bottompagecontrol: UIPageControl!
     
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +26,6 @@ class PageControlViewController: UIViewController {
         
         thirdPageControl.preferredIndicatorImage = UIImage(named: "logo")
         thirdPageControl.preferredCurrentPageIndicatorImage = UIImage(named: "facebook")
-        
     }
     
     @IBAction func pageControlChanged(_ sender: UIPageControl) {

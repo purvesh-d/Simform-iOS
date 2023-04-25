@@ -28,7 +28,7 @@ class SegmentedViewController: UIViewController {
         case 2:
             dataview.text = "Travelling time via walking will be 2 hour"
         case 3:
-            dataview.text = "Travelling time via bus will be 2 hour"
+            dataview.text = "Travelling time via bus will be 1:30 hour"
         default:
             print("default case")
         }

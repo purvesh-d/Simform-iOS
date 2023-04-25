@@ -22,7 +22,6 @@ class StepperViewController: UIViewController {
         
         firstStepper.setIncrementImage(UIImage(named: "facebook"), for: .normal)
         firstStepper.setDecrementImage(UIImage(named: "google"), for: .normal)
-        
     }
 
     @IBAction func firstStepper(_ sender: UIStepper) {

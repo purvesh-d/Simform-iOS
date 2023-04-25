@@ -9,8 +9,8 @@ import UIKit
 
 class PickerDemoViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var countryTextfield: UITextField!
-    @IBOutlet weak var stateTextfield: UITextField!
+    @IBOutlet private weak var countryTextfield: UITextField!
+    @IBOutlet private weak var stateTextfield: UITextField!
     
     let countryPicker = UIPickerView()
     let statePicker = UIPickerView()
