@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xX0-XV-UHY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,7 +53,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="UwZ-1J-Y4j"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="983-Ca-7BP"/>
                 </viewController>
@@ -71,7 +72,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="lDK-oG-H10">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                                 <items>
-                                    <barButtonItem image="chevron.left" catalog="system" style="done" id="13r-5n-lu1">
+                                    <barButtonItem title="Item" image="chevron.left" catalog="system" style="done" id="13r-5n-lu1">
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <connections>
                                             <action selector="backButtonAction:" destination="n82-8m-Qm5" id="Ma2-Jw-ycO"/>
@@ -168,9 +169,6 @@
                                 </items>
                                 <toolbarAppearance key="compactScrollEdgeAppearance"/>
                             </toolbar>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAR-p1-kfy">
-                                <rect key="frame" x="0.0" y="518" width="392" height="216"/>
-                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ySd-UR-hU4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -179,22 +177,18 @@
                             <constraint firstItem="ySd-UR-hU4" firstAttribute="trailing" secondItem="OXQ-K9-fzJ" secondAttribute="trailing" constant="1" id="932-7F-gHW"/>
                             <constraint firstItem="yDs-e4-iQf" firstAttribute="top" secondItem="DfD-Wj-UU0" secondAttribute="bottom" constant="47" id="AA8-z8-okm"/>
                             <constraint firstItem="yDs-e4-iQf" firstAttribute="trailing" secondItem="DfD-Wj-UU0" secondAttribute="trailing" id="BJp-07-deG"/>
-                            <constraint firstItem="xAR-p1-kfy" firstAttribute="leading" secondItem="yDs-e4-iQf" secondAttribute="leading" id="QrW-2I-cJt"/>
                             <constraint firstItem="OXQ-K9-fzJ" firstAttribute="top" secondItem="ySd-UR-hU4" secondAttribute="top" constant="82" id="XvQ-W8-Pbk"/>
                             <constraint firstItem="9eK-fl-XGl" firstAttribute="top" secondItem="OXQ-K9-fzJ" secondAttribute="bottom" constant="46" id="a1N-Eb-15B"/>
                             <constraint firstItem="DfD-Wj-UU0" firstAttribute="top" secondItem="9eK-fl-XGl" secondAttribute="bottom" constant="50" id="dD9-KE-gqG"/>
                             <constraint firstItem="DfD-Wj-UU0" firstAttribute="trailing" secondItem="9eK-fl-XGl" secondAttribute="trailing" id="eBF-jv-e6M"/>
                             <constraint firstItem="OXQ-K9-fzJ" firstAttribute="leading" secondItem="ySd-UR-hU4" secondAttribute="leading" id="lGF-Lr-Vid"/>
-                            <constraint firstItem="xAR-p1-kfy" firstAttribute="trailing" secondItem="yDs-e4-iQf" secondAttribute="trailing" id="mC2-e0-1Ac"/>
                             <constraint firstItem="9eK-fl-XGl" firstAttribute="trailing" secondItem="OXQ-K9-fzJ" secondAttribute="trailing" id="pbT-lQ-tQZ"/>
-                            <constraint firstItem="xAR-p1-kfy" firstAttribute="top" secondItem="yDs-e4-iQf" secondAttribute="bottom" constant="58" id="uY7-7L-XE7"/>
                             <constraint firstItem="yDs-e4-iQf" firstAttribute="leading" secondItem="DfD-Wj-UU0" secondAttribute="leading" id="uvT-9v-Odi"/>
                             <constraint firstItem="9eK-fl-XGl" firstAttribute="leading" secondItem="OXQ-K9-fzJ" secondAttribute="leading" id="zbf-yQ-Y5h"/>
                         </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="pickerView" destination="xAR-p1-kfy" id="Je9-ql-f5G"/>
                         <outlet property="toolbar" destination="OXQ-K9-fzJ" id="uQM-Je-AZc"/>
                     </connections>
                 </viewController>
@@ -637,10 +631,72 @@
                     <view key="view" contentMode="scaleToFill" id="D4b-4e-iqG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="9qI-ya-V06">
+                                <rect key="frame" x="0.0" y="82" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Grd-Aw-Zrw" id="GDs-id-agh"/>
+                                </connections>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DR2-Er-4iD">
+                                <rect key="frame" x="20" y="188" width="353" height="556"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cas-7c-2pg">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeriesSearchCollectionViewCell" id="epO-84-WVW" customClass="SeriesSearchCollectionViewCell" customModule="LaunchScreenDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lWu-Wk-1gU">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWC-v5-AWC">
+                                                    <rect key="frame" x="43" y="53.666666666666657" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yWC-v5-AWC" firstAttribute="centerX" secondItem="lWu-Wk-1gU" secondAttribute="centerX" id="4bl-xA-4CX"/>
+                                                <constraint firstItem="yWC-v5-AWC" firstAttribute="centerY" secondItem="lWu-Wk-1gU" secondAttribute="centerY" id="nyu-X3-hNA"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <connections>
+                                            <outlet property="seriesName" destination="yWC-v5-AWC" id="ZG9-W8-HVY"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Grd-Aw-Zrw" id="OTo-jX-tfF"/>
+                                    <outlet property="delegate" destination="Grd-Aw-Zrw" id="ctt-zG-HX6"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="i3f-Cg-txw"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9qI-ya-V06" firstAttribute="top" secondItem="i3f-Cg-txw" secondAttribute="top" constant="23" id="0n9-kX-jcD"/>
+                            <constraint firstItem="DR2-Er-4iD" firstAttribute="top" secondItem="9qI-ya-V06" secondAttribute="bottom" constant="50" id="2zh-Tc-uRG"/>
+                            <constraint firstItem="9qI-ya-V06" firstAttribute="trailing" secondItem="i3f-Cg-txw" secondAttribute="trailing" id="Ib2-RJ-fK6"/>
+                            <constraint firstItem="i3f-Cg-txw" firstAttribute="trailing" secondItem="DR2-Er-4iD" secondAttribute="trailing" constant="20" id="KPq-d0-Pbd"/>
+                            <constraint firstItem="9qI-ya-V06" firstAttribute="leading" secondItem="i3f-Cg-txw" secondAttribute="leading" id="Zpg-25-FgM"/>
+                            <constraint firstItem="DR2-Er-4iD" firstAttribute="leading" secondItem="i3f-Cg-txw" secondAttribute="leading" constant="20" id="h6F-fc-AID"/>
+                            <constraint firstItem="i3f-Cg-txw" firstAttribute="bottom" secondItem="DR2-Er-4iD" secondAttribute="bottom" constant="25" id="r1Z-Ec-xtl"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="fsM-Bx-hQk"/>
+                    <connections>
+                        <outlet property="searchBar" destination="9qI-ya-V06" id="Tbm-gR-L21"/>
+                        <outlet property="searchCollectionView" destination="DR2-Er-4iD" id="AC8-cU-9v7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2NN-UR-ETm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -693,6 +749,9 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

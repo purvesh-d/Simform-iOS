@@ -36,12 +36,10 @@ extension DemoCollectionViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print(indexPath)
         if collectionView == artistsCollectionView {
             guard let artistsCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ArtistsCollectionViewCell", for: indexPath) as? ArtistsCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            print(indexPath.row)
             let newData = arrayOfArtists[indexPath.row]
             artistsCell.configureCell(data: newData)
             return artistsCell
@@ -60,9 +58,9 @@ extension DemoCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == artistsCollectionView {
-            return CGSize(width: collectionView.bounds.width/3 - 20, height: 155)
+            return CGSize(width: collectionView.bounds.width/3 - 10, height: 155)
         } else {
-            return CGSize(width: collectionView.bounds.width/3 - 10, height: 200)
+            return CGSize(width: collectionView.bounds.width/3 - 20, height: 200)
         }
     }
     

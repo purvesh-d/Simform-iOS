@@ -67,13 +67,11 @@ class PickerDemoViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func stateCancelAction() {
-        
         stateTextfield.text = ""
         stateTextfield.resignFirstResponder()
     }
     
     @objc func stateDoneAction() {
-        
         stateTextfield.resignFirstResponder()
     }
 }
@@ -91,6 +89,16 @@ extension PickerDemoViewController: UIPickerViewDataSource {
             return arrayOfState.count
         }
     }
+}
+
+extension PickerDemoViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView == countryPicker {
+            return arrayOfCountry[row]
+        } else {
+            return arrayOfState[row]
+        }
+    }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == countryPicker {
@@ -102,16 +110,5 @@ extension PickerDemoViewController: UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 50
-    }
-}
-
-extension PickerDemoViewController: UIPickerViewDelegate {
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
-        if pickerView == countryPicker {
-            return arrayOfCountry[row]
-        } else {
-            return arrayOfState[row]
-        }
     }
 }

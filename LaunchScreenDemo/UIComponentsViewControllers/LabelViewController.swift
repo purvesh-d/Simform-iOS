@@ -13,7 +13,10 @@ class LabelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpLabel()
+    }
+    
+    private func setUpLabel() {
         labelhello.backgroundColor = UIColor.black
         labelhello.textColor = UIColor.white
         labelhello.textAlignment = .center
