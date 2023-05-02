@@ -78,6 +78,7 @@
 		1BE8C0E329EE915300FC3632 /* ActivityIndicatorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */; };
 		1BE8C0E529EEA05C00FC3632 /* WebDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */; };
 		1BE8C0EB29EEA8E300FC3632 /* Demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */; };
+		1BEC062B2A00C9F6009F69EE /* DemoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC062A2A00C9F6009F69EE /* DemoScreenViewController.swift */; };
 		1BF4D7B229F63BB500770E98 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D7B129F63BB500770E98 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +157,7 @@
 		1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorDemoViewController.swift; sourceTree = "<group>"; };
 		1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDemoViewController.swift; sourceTree = "<group>"; };
 		1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Demo.pdf; sourceTree = "<group>"; };
+		1BEC062A2A00C9F6009F69EE /* DemoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScreenViewController.swift; sourceTree = "<group>"; };
 		1BF4D7B129F63BB500770E98 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,6 +248,7 @@
 				1BC095C229F7C8F40042ED7A /* ButtonPropertiesViewController.swift */,
 				1BAFEFCD29F8D8E900BCEA23 /* ScrollViewController.swift */,
 				1B9EC8E829F92E1B00168A69 /* ImageCollectionViewController.swift */,
+				1BEC062A2A00C9F6009F69EE /* DemoScreenViewController.swift */,
 			);
 			path = UIComponentsViewControllers;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */,
 				1B37605D29F1102C000D4107 /* ContactsViewController.swift in Sources */,
 				1B37825329F293CB00E01236 /* DatePickerDemoViewController.swift in Sources */,
+				1BEC062B2A00C9F6009F69EE /* DemoScreenViewController.swift in Sources */,
 				1B4B6E8129E8159700CCD5FF /* ColorTableViewCell.swift in Sources */,
 				1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */,
 				1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */,
