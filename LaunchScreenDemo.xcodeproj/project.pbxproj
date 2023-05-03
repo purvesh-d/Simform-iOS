@@ -80,6 +80,8 @@
 		1BE8C0EB29EEA8E300FC3632 /* Demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */; };
 		1BEC062B2A00C9F6009F69EE /* DemoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC062A2A00C9F6009F69EE /* DemoScreenViewController.swift */; };
 		1BF4D7B229F63BB500770E98 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D7B129F63BB500770E98 /* MapViewController.swift */; };
+		1BF950072A02385900593C54 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF950062A02385900593C54 /* HomeCollectionViewCell.swift */; };
+		1BF950092A02395900593C54 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF950082A02395900593C54 /* HomeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +161,8 @@
 		1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Demo.pdf; sourceTree = "<group>"; };
 		1BEC062A2A00C9F6009F69EE /* DemoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScreenViewController.swift; sourceTree = "<group>"; };
 		1BF4D7B129F63BB500770E98 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1BF950062A02385900593C54 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1BF950082A02395900593C54 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,7 @@
 				1BAFEFCF29F9199700BCEA23 /* SeriesSearchCollectionViewCell.swift */,
 				1B9EC8E229F9245000168A69 /* AlbumDemoCollectionViewCell.swift */,
 				1B9EC8E429F92DB300168A69 /* ImageCollectionViewCell.swift */,
+				1BF950062A02385900593C54 /* HomeCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				1B8E43FE29E9815B00622504 /* DemoData.swift */,
 				1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */,
 				1B9EC8EA29F92EC900168A69 /* ImagesModel.swift */,
+				1BF950082A02395900593C54 /* HomeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				1BC51A2229E5796B00AC4827 /* StepperViewController.swift in Sources */,
 				1BCD825529EFAF10007D9A4C /* SearchBarDemoViewController.swift in Sources */,
 				1B65E53A29E4165A0090E749 /* TextViewController.swift in Sources */,
+				1BF950072A02385900593C54 /* HomeCollectionViewCell.swift in Sources */,
 				1B4E45FC29E90EF90043A415 /* DemoCollectionViewCell.swift in Sources */,
 				1BDFA23A29ED603B00340837 /* ImagePickerViewController.swift in Sources */,
 				1BE8C0DF29EE769E00FC3632 /* PHPickerDemoViewController.swift in Sources */,
@@ -435,6 +442,7 @@
 				1BDFA23429ED1B8F00340837 /* ArtistsModel.swift in Sources */,
 				1BAFEFCE29F8D8E900BCEA23 /* ScrollViewController.swift in Sources */,
 				1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */,
+				1BF950092A02395900593C54 /* HomeModel.swift in Sources */,
 				1BDDA23D29E68FEC00D06376 /* TableContentViewController.swift in Sources */,
 				1BC51A2029E5701400AC4827 /* SegmentedViewController.swift in Sources */,
 				1BE8C0E329EE915300FC3632 /* ActivityIndicatorDemoViewController.swift in Sources */,
