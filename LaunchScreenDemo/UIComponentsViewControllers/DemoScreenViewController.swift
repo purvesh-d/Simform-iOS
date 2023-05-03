@@ -18,7 +18,7 @@ class DemoScreenViewController: UIViewController {
     @IBOutlet private weak var profileImage: UIImageView!
     
     //MARK: - private variables
-    var arrayOfData = HomeModel.getHomeData()
+    private var arrayOfImages = ["bedroom", "bedroom", "bedroom"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class DemoScreenViewController: UIViewController {
 extension DemoScreenViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrayOfData.count
+        return arrayOfImages.count
     }
     
     
@@ -55,21 +55,18 @@ extension DemoScreenViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as? HomeCollectionViewCell else {
             return UICollectionViewCell()
         }
-        let newData = arrayOfData[indexPath.row]
-        cell.configCell(data: newData)
+        let newData = arrayOfImages[indexPath.row]
+        cell.imageView.image = UIImage(named: newData)
         return cell
     }
 }
 
 extension DemoScreenViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        10
-    }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width/2, height: 170)
+        return CGSize(width: collectionView.bounds.width-20, height: 180)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
