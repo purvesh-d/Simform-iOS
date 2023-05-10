@@ -71,7 +71,6 @@
 		1BDFA23429ED1B8F00340837 /* ArtistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */; };
 		1BDFA23629ED404B00340837 /* AlbumsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23529ED404B00340837 /* AlbumsCollectionViewCell.swift */; };
 		1BDFA23A29ED603B00340837 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFA23929ED603B00340837 /* ImagePickerViewController.swift */; };
-		1BE172C22A0B4E5300D6EF76 /* NavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE172C12A0B4E5300D6EF76 /* NavigationController.storyboard */; };
 		1BE4BDEA29F2563F00F946B5 /* ToolBarPropertyDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4BDE929F2563F00F946B5 /* ToolBarPropertyDemoViewController.swift */; };
 		1BE4BDEC29F2609000F946B5 /* PickerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4BDEB29F2609000F946B5 /* PickerDemoViewController.swift */; };
 		1BE8C0DF29EE769E00FC3632 /* PHPickerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0DE29EE769E00FC3632 /* PHPickerDemoViewController.swift */; };
@@ -152,7 +151,6 @@
 		1BDFA23329ED1B8F00340837 /* ArtistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsModel.swift; sourceTree = "<group>"; };
 		1BDFA23529ED404B00340837 /* AlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1BDFA23929ED603B00340837 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
-		1BE172C12A0B4E5300D6EF76 /* NavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationController.storyboard; sourceTree = "<group>"; };
 		1BE4BDE929F2563F00F946B5 /* ToolBarPropertyDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarPropertyDemoViewController.swift; sourceTree = "<group>"; };
 		1BE4BDEB29F2609000F946B5 /* PickerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDemoViewController.swift; sourceTree = "<group>"; };
 		1BE8C0DE29EE769E00FC3632 /* PHPickerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerDemoViewController.swift; sourceTree = "<group>"; };
@@ -289,7 +287,6 @@
 				1BD6D78E299CB1C1000B1CE4 /* Info.plist */,
 				1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */,
 				1B37605529F0FD5D000D4107 /* UIComponents2.storyboard */,
-				1BE172C02A0B4E3000D6EF76 /* NavigationController */,
 				1B8E43FB29E97FD900622504 /* UIComponentsViewControllers */,
 				1B4E45FA29E90EDA0043A415 /* CollectionViewCells */,
 				1BDDA24229E693FE00D06376 /* TableViewCells */,
@@ -314,14 +311,6 @@
 				1B8E43F529E949FD00622504 /* LabelExpandTableViewCell.swift */,
 			);
 			path = TableViewCells;
-			sourceTree = "<group>";
-		};
-		1BE172C02A0B4E3000D6EF76 /* NavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				1BE172C12A0B4E5300D6EF76 /* NavigationController.storyboard */,
-			);
-			path = NavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,7 +381,6 @@
 				1BE8C0EB29EEA8E300FC3632 /* Demo.pdf in Resources */,
 				1BDDA24A29E6AB2600D06376 /* EvenTableViewCell.xib in Resources */,
 				1BDDA25D29E6BE4900D06376 /* CompanyTableCellTableViewCell.xib in Resources */,
-				1BE172C22A0B4E5300D6EF76 /* NavigationController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
