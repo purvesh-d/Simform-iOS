@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  DThirdViewController.swift
 //  LaunchScreenDemo
 //
 //  Created by Vidhi Patel on 10/05/23.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class DThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
-    @IBAction func goToFirstVC(segue: UIStoryboardSegue) {
-
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
+
 }
