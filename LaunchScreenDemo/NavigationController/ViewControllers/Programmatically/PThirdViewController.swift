@@ -13,8 +13,4 @@ class PThirdViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .purple
     }
-    
-    @IBAction func goBackAction(_ sender: UIButton) {
-        
-    }
 }

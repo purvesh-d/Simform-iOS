@@ -12,11 +12,19 @@ class PSecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .orange
-        setupBarbutton()
+        navigationItem.setHidesBackButton(true, animated: true)
+        setupNavigatioBar()
+        //setupBarbutton()
+    }
+    
+    //MARK: - Private methods
+    private func setupNavigatioBar() {
+        navigationController?.navigationBar.backgroundColor = .red
+        let imageView = UIImageView(image: UIImage(systemName: "trash"))
+        navigationItem.titleView = imageView
     }
     
     private func setupBarbutton() {
-        
         let button1 = UIButton()
         button1.setImage(UIImage(systemName: "chevron.left"), for: .normal)
         button1.setTitle("Back", for: .normal)
@@ -31,8 +39,8 @@ class PSecondViewController: UIViewController {
     
     @IBAction func goToThirdVC(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
-        let thirdVC = storyboard.instantiateViewController(withIdentifier: "PThirdViewController") as! PThirdViewController
-        navigationController?.present(thirdVC, animated: true)
+        if let thirdVC = storyboard.instantiateViewController(withIdentifier: "PThirdViewController") as? PThirdViewController {
+            navigationController?.present(thirdVC, animated: true)
+        }
     }
-    
  }
