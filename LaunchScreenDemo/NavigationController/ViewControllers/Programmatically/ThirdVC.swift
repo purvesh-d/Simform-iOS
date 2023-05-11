@@ -1,13 +1,13 @@
 //
-//  DThirdViewController.swift
+//  ThirdVC.swift
 //  LaunchScreenDemo
 //
-//  Created by Vidhi Patel on 10/05/23.
+//  Created by Vidhi Patel on 11/05/23.
 //
 
 import UIKit
 
-class DThirdViewController: UIViewController {
+class ThirdVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,5 +16,4 @@ class DThirdViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
     }
-
 }

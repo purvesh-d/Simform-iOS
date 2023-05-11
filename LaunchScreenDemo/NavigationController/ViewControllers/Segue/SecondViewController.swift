@@ -9,7 +9,12 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    //MARK: - IBOutlet
+    @IBOutlet private weak var lblName: UILabel!
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        lblName.text = name ?? " "
     }
 }

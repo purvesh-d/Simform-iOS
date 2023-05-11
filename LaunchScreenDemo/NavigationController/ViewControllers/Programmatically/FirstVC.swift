@@ -1,19 +1,20 @@
 //
-//  DFirstViewController.swift
+//  FirstVC.swift
 //  LaunchScreenDemo
 //
-//  Created by Vidhi Patel on 10/05/23.
+//  Created by Vidhi Patel on 11/05/23.
 //
 
 import UIKit
 
-class DFirstViewController: UIViewController {
+class FirstVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.backBarButtonItem?.tintColor = .magenta
     }
+    
     override func viewDidAppear(_ animated: Bool) {
-        
+
     }
 }
