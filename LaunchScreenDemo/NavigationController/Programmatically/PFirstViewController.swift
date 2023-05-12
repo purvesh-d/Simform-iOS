@@ -9,6 +9,9 @@ import UIKit
 
 class PFirstViewController: UIViewController {
     
+    @IBOutlet private weak var lblFullName: UILabel!
+    @IBOutlet private weak var tfFirstName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigation()
@@ -17,19 +20,21 @@ class PFirstViewController: UIViewController {
     //MARK: - Private method
     private func setupNavigation() {
         view.backgroundColor = .brown
-        navigationItem.title = "Home screen"
-        navigationController?.navigationBar.tintColor = .black
-        navigationController?.navigationBar.backgroundColor = .orange
+        navigationItem.title = "First View Controller"
+        UINavigationBar.appearance().backgroundColor = .green
     }
     
     @IBAction func goToSecondVC(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         if let secondVC = storyboard.instantiateViewController(withIdentifier: "PSecondViewController") as? PSecondViewController {
+            secondVC.fname = tfFirstName.text ?? " "
             navigationController?.pushViewController(secondVC, animated: true)
         }
     }
-    
-    //MARK: - Unwind segue action
-    @IBAction func gotoFirstVC(segue: UIStoryboardSegue) {
+}
+
+extension PFirstViewController: PassDataToFirstVC {
+    func passData(data: String) {
+        lblFullName.text = data
     }
 }

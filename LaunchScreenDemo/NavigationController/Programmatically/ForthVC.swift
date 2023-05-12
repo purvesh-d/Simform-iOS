@@ -12,10 +12,6 @@ class ForthVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
 
     @IBAction func goToSpecificVC(_ sender: UIButton) {
         if let viewControllers = navigationController?.viewControllers {

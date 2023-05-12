@@ -13,7 +13,7 @@
         <!--Label View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="LabelViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LabelViewController" id="Y6W-OH-hqX" customClass="LabelViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--Scroll View Controller-->
         <scene sceneID="PJO-di-SkX">
             <objects>
-                <viewController id="lJL-3S-Ehj" customClass="ScrollViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScrollViewController" id="lJL-3S-Ehj" customClass="ScrollViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OjM-iC-hn6">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="131" y="741"/>
         </scene>
-        <!--View Controller-->
+        <!--Stack View Demo View Controller-->
         <scene sceneID="9DK-tj-bZz">
             <objects>
-                <viewController id="4ww-Xc-55H" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StackViewDemoViewController" id="4ww-Xc-55H" customClass="StackViewDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gYy-s7-FP3">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,7 +469,7 @@
         <!--Job View Controller-->
         <scene sceneID="bJ5-bF-Yn0">
             <objects>
-                <viewController id="eYe-lH-Cu2" customClass="JobViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JobViewController" id="eYe-lH-Cu2" customClass="JobViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6qN-IS-Gbt">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -513,7 +513,7 @@
         <!--State Table View Controller-->
         <scene sceneID="92L-NB-VTc">
             <objects>
-                <viewController id="hxY-BC-J5E" customClass="StateTableViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StateTableViewController" id="hxY-BC-J5E" customClass="StateTableViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3vh-Ob-lvr">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -549,7 +549,7 @@
         <!--Demo Table View Controller-->
         <scene sceneID="luQ-xr-dN8">
             <objects>
-                <viewController id="rfa-zd-hvk" customClass="DemoTableViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoTableViewController" id="rfa-zd-hvk" customClass="DemoTableViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F1I-Sv-rCO">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -686,7 +686,7 @@
         <!--Collection View Controller-->
         <scene sceneID="D07-yG-l2o">
             <objects>
-                <viewController id="0ee-an-n3P" customClass="CollectionViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CollectionViewController" id="0ee-an-n3P" customClass="CollectionViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dQZ-w6-4jM">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -738,7 +738,7 @@
         <!--Demo Collection View Controller-->
         <scene sceneID="Y0g-eg-tFI">
             <objects>
-                <viewController id="bIM-cg-op9" customClass="DemoCollectionViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DemoCollectionViewController" id="bIM-cg-op9" customClass="DemoCollectionViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXd-cr-rn9">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -908,7 +908,7 @@
         <!--Image Picker View Controller-->
         <scene sceneID="2TO-cb-FA2">
             <objects>
-                <viewController id="p7u-mB-eFl" customClass="ImagePickerViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImagePickerViewController" id="p7u-mB-eFl" customClass="ImagePickerViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ggh-C6-0PU">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -957,7 +957,7 @@
         <!--Picker Demo View Controller-->
         <scene sceneID="WwZ-l5-QCX">
             <objects>
-                <viewController id="j70-sw-mIF" customClass="PHPickerDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PHPickerDemoViewController" id="j70-sw-mIF" customClass="PHPickerDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xia-bE-gjb">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1040,7 +1040,7 @@
         <!--Activity Indicator Demo View Controller-->
         <scene sceneID="d56-OL-ff3">
             <objects>
-                <viewController id="FVz-5d-HQt" customClass="ActivityIndicatorDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActivityIndicatorDemoViewController" id="FVz-5d-HQt" customClass="ActivityIndicatorDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nDT-dl-Ee9">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1095,7 +1095,7 @@
         <!--Web Demo View Controller-->
         <scene sceneID="shW-Im-wk6">
             <objects>
-                <viewController id="LU7-Q9-WLO" customClass="WebDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebDemoViewController" id="LU7-Q9-WLO" customClass="WebDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xef-iW-cjz">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1155,7 +1155,7 @@
         <!--Search Bar Demo View Controller-->
         <scene sceneID="EqA-Xk-pAh">
             <objects>
-                <viewController id="ubS-V8-c7x" customClass="SearchBarDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchBarDemoViewController" id="ubS-V8-c7x" customClass="SearchBarDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8VG-9y-zeN">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1326,7 +1326,7 @@
         <!--Button View Controller-->
         <scene sceneID="nh6-00-qoQ">
             <objects>
-                <viewController id="uaO-dR-UxF" customClass="ButtonViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ButtonViewController" id="uaO-dR-UxF" customClass="ButtonViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lMm-ke-R3y">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1395,7 +1395,7 @@
         <!--Text Field View Controller-->
         <scene sceneID="lux-Rs-9Gh">
             <objects>
-                <viewController id="KvF-2P-2nh" customClass="TextFieldViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TextFieldViewController" id="KvF-2P-2nh" customClass="TextFieldViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wNb-7K-VsM">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1484,7 +1484,7 @@
         <!--Text View Controller-->
         <scene sceneID="TVH-87-NLe">
             <objects>
-                <viewController id="0MF-0w-1zM" customClass="TextViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TextViewController" id="0MF-0w-1zM" customClass="TextViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hXC-rS-XYj">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1534,7 +1534,7 @@
         <!--Switch View Controller-->
         <scene sceneID="TAB-2i-wPN">
             <objects>
-                <viewController id="SVb-Xz-sKX" customClass="SwitchViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwitchViewController" id="SVb-Xz-sKX" customClass="SwitchViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RF2-zj-Er9">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1570,7 +1570,7 @@
         <!--Slider View Controller-->
         <scene sceneID="S0f-qS-3Y0">
             <objects>
-                <viewController id="Lcl-P6-Om9" customClass="SliderViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SliderViewController" id="Lcl-P6-Om9" customClass="SliderViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PSg-cY-5Ct">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1693,7 +1693,7 @@
         <!--Progress View Controller-->
         <scene sceneID="SFp-Ma-ffe">
             <objects>
-                <viewController id="h7v-LS-Des" customClass="ProgressViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProgressViewController" id="h7v-LS-Des" customClass="ProgressViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OhC-mI-Rxf">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1768,7 +1768,7 @@
         <!--Segmented View Controller-->
         <scene sceneID="1cO-iO-ROP">
             <objects>
-                <viewController id="Wcd-zh-LD1" customClass="SegmentedViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SegmentedViewController" id="Wcd-zh-LD1" customClass="SegmentedViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W4y-WJ-4s6">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1857,7 +1857,7 @@
         <!--Page Control View Controller-->
         <scene sceneID="IfI-eL-k2D">
             <objects>
-                <viewController id="kfa-rW-f52" customClass="PageControlViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageControlViewController" id="kfa-rW-f52" customClass="PageControlViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pVm-cN-ZdH">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1925,7 +1925,7 @@
         <!--Stepper View Controller-->
         <scene sceneID="Jhr-iG-cPT">
             <objects>
-                <viewController id="kpW-in-8AH" customClass="StepperViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepperViewController" id="kpW-in-8AH" customClass="StepperViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LDw-LW-HPr">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

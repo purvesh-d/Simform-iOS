@@ -71,113 +71,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7BD912CA-7C20-4386-A938-2F1612C5ED68"
+            uuid = "5AD2BC3A-1954-445F-BB6E-B6AC4A389C98"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LaunchScreenDemo/NavigationController/ViewControllers/Programmatically/ThirdVC.swift"
+            filePath = "LaunchScreenDemo/NavigationController/Programmatically/PFirstViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "74FBD622-A18D-4043-9927-D6E9DF7820E1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LaunchScreenDemo/NavigationController/ViewControllers/Programmatically/SecondVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1098B4E0-27AD-4C0E-8360-F09934100207"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LaunchScreenDemo/NavigationController/ViewControllers/Programmatically/FirstVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B85AE8A7-97A2-4D20-BCE1-E6780B32D48D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LaunchScreenDemo/NavigationController/ViewControllers/Programmatically/ForthVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "viewDidAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "ECB78B33-7C99-4790-B390-6127A4EC9624"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LaunchScreenDemo/NavigationController/ViewControllers/Programmatically/ForthVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "goToSpecificVC(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "ECB78B33-7C99-4790-B390-6127A4EC9624 - fa97a39c5f7be75"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LaunchScreenDemo.ForthVC.goToSpecificVC(__C.UIButton) -&gt; ()"
-                  moduleName = "LaunchScreenDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vidhi/Documents/GitiOS/LaunchScreenDemo/NavigationController/ViewControllers/Programmatically/ForthVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "117">
-               </Location>
-               <Location
-                  uuid = "ECB78B33-7C99-4790-B390-6127A4EC9624 - fa97a39c5f7be75"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LaunchScreenDemo.ForthVC.goToSpecificVC(__C.UIButton) -&gt; ()"
-                  moduleName = "LaunchScreenDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vidhi/Documents/GitiOS/LaunchScreenDemo/NavigationController/ViewControllers/Programmatically/ForthVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "320">
-               </Location>
-            </Locations>
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "passData(data:)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
