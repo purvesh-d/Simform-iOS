@@ -9,7 +9,6 @@ import UIKit
 
 class DatePickerDemoViewController: UIViewController, UITextFieldDelegate {
     
-  
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var imageTextfield: UITextField!
     @IBOutlet private weak var stateTextfield: UITextField!

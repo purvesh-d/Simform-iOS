@@ -65,7 +65,7 @@
         <!--Tool Bar Demo View Controller-->
         <scene sceneID="fWa-uZ-HRq">
             <objects>
-                <viewController id="n82-8m-Qm5" customClass="ToolBarDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ToolBarDemoViewController" id="n82-8m-Qm5" customClass="ToolBarDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HDB-aD-0SJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +200,7 @@
         <!--Picker Demo View Controller-->
         <scene sceneID="pdU-1f-1xb">
             <objects>
-                <viewController id="NwC-ef-6DS" customClass="PickerDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickerDemoViewController" id="NwC-ef-6DS" customClass="PickerDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5bY-9w-itC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,7 +300,7 @@
         <!--Date Picker Demo View Controller-->
         <scene sceneID="J2f-V4-PMd">
             <objects>
-                <viewController id="dd2-wl-FuF" customClass="DatePickerDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DatePickerDemoViewController" id="dd2-wl-FuF" customClass="DatePickerDemoViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oJe-qH-Dgl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,7 +375,7 @@
         <!--Map View Controller-->
         <scene sceneID="fwq-1L-fxm">
             <objects>
-                <viewController id="pIx-hH-qDb" customClass="MapViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="pIx-hH-qDb" customClass="MapViewController" customModule="LaunchScreenDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nwR-hw-Ibz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -889,7 +889,7 @@
                                 </connections>
                             </collectionView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RlN-1R-Gly">
-                                <rect key="frame" x="0.0" y="785" width="393" height="49"/>
+                                <rect key="frame" x="-1" y="784" width="393" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.082352941176470587" green="0.13333333333333333" blue="0.2196078431372549" alpha="0.3878412309861341" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>

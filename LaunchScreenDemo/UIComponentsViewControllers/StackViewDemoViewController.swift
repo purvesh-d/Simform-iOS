@@ -11,7 +11,6 @@ class StackViewDemoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let background = UIImage(named: "background")
         var imageView : UIImageView!
         imageView = UIImageView(frame: view.bounds)

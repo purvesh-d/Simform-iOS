@@ -22,16 +22,16 @@ class SecondVC: UIViewController {
         navigationItem.rightBarButtonItems = [button1, button2, button3]
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
     @IBAction func goToThirdVC(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         if let thirdVC = storyboard.instantiateViewController(withIdentifier: "ThirdVC") as? ThirdVC {
-            var arrayOfVC = navigationController?.viewControllers
+            navigationController?.pushViewController(thirdVC, animated: true)
+            
+            //remove and append View Controllers from navigation stack
+            /*var arrayOfVC = navigationController?.viewControllers
             arrayOfVC?.removeAll()
             arrayOfVC?.append(thirdVC)
-            navigationController?.setViewControllers(arrayOfVC!, animated: true)
+            navigationController?.setViewControllers(arrayOfVC!, animated: true)*/
         }
     }
 }
