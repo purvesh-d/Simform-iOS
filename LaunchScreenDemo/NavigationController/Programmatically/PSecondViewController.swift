@@ -9,18 +9,29 @@ import UIKit
 
 class PSecondViewController: UIViewController {
     
+    //MARK: - IBOutlet
     @IBOutlet private weak var lblFirstName: UILabel!
+    //weak var delegateBackward: PassDataToFirstVC?
     var fname = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .orange
         lblFirstName.text = fname
-        setupNavigatioBar()
         setupBarbutton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //setupNavigatioBar()
     }
     
     //MARK: - Private methods
     private func setupNavigatioBar() {
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .green
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
         
         let titleLabel = UILabel()
         titleLabel.text = "Second View Controller"
@@ -51,6 +62,7 @@ class PSecondViewController: UIViewController {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         if let thirdVC = storyboard.instantiateViewController(withIdentifier: "PThirdViewController") as? PThirdViewController {
             thirdVC.fnameFromSecond = fname
+            //thirdVC.delegateThird = delegateBackward
             navigationController?.pushViewController(thirdVC, animated: true)
         }
     }
@@ -59,7 +71,17 @@ class PSecondViewController: UIViewController {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         if let forthVC = storyboard.instantiateViewController(withIdentifier: "PForthViewController") as? PForthViewController {
             forthVC.fnameFromThird = fname
+            forthVC.delegate = self
             navigationController?.pushViewController(forthVC, animated: true)
+        }
+    }
+}
+
+extension PSecondViewController: PassDataToFirstVC {
+    func passData(data: String) {
+        if let secondVC = navigationController?.viewControllers.first as? PFirstViewController {
+            secondVC.passData(data: data)
+            lblFirstName.text = data
         }
     }
 }

@@ -11,7 +11,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UINavigationBar.appearance().barTintColor = .red
+        
+        //same navigation bar color for entire application
+        /*let appearance = UINavigationBarAppearance()
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        appearance.backgroundColor = .red*/
+        
         print(#function)
         return true
     }

@@ -22,15 +22,32 @@ class PForthViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .darkGray
         lblFname.text = fnameFromThird
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupNavigationBar()
     }
     
     private func setupNavigationBar() {
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .orange
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
         navigationItem.title = "Forth View Controller"
     }
     
     @IBAction func goBackToFirstVC(_ sender: UIButton) {
-        delegate?.passData(data: fnameFromThird + (tfLastName.text ?? ""))
-        navigationController?.popViewController(animated: true)
+        /*if let viewControllers = navigationController?.viewControllers {
+            for viewController in viewControllers {
+                if ((viewController as? PSecondViewController) != nil) {
+                    //delegate?.passData(data: fnameFromThird + " " + (tfLastName.text ?? ""))
+                    delegate?.passData(data: tfLastName.text ?? "")
+                    navigationController?.popToViewController(viewController, animated: true)
+                }
+            }
+        }*/
+        delegate?.passData(data: fnameFromThird + " " + (tfLastName.text ?? ""))
+        navigationController?.popToRootViewController(animated: true)
     }
 }
