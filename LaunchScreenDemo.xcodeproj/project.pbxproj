@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21DE8029E01823000730B1 /* NewViewController.swift */; };
+		1B3081182A122C7D005F5CED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3081172A122C7D005F5CED /* LoginViewController.swift */; };
+		1B30811A2A123745005F5CED /* TabBarLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3081192A123745005F5CED /* TabBarLoginViewController.swift */; };
+		1B30811C2A123D8D005F5CED /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B30811B2A123D8D005F5CED /* LogoutViewController.swift */; };
 		1B37605629F0FD5D000D4107 /* UIComponents2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B37605529F0FD5D000D4107 /* UIComponents2.storyboard */; };
 		1B37605929F109F0000D4107 /* TabBarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B37605829F109F0000D4107 /* TabBarDemoViewController.swift */; };
 		1B37605D29F1102C000D4107 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B37605C29F1102C000D4107 /* ContactsViewController.swift */; };
@@ -105,6 +108,9 @@
 
 /* Begin PBXFileReference section */
 		1B21DE8029E01823000730B1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		1B3081172A122C7D005F5CED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1B3081192A123745005F5CED /* TabBarLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLoginViewController.swift; sourceTree = "<group>"; };
+		1B30811B2A123D8D005F5CED /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		1B37605529F0FD5D000D4107 /* UIComponents2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents2.storyboard; sourceTree = "<group>"; };
 		1B37605829F109F0000D4107 /* TabBarDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDemoViewController.swift; sourceTree = "<group>"; };
 		1B37605C29F1102C000D4107 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -339,6 +345,9 @@
 				1BE2D36C2A0E1CE500E76B0F /* CombineScreenViewController.swift */,
 				1BE2D3702A0E1D4B00E76B0F /* ComponentsModel.swift */,
 				1BE2D3722A0E31EE00E76B0F /* ComponentsTableViewCell.swift */,
+				1B3081192A123745005F5CED /* TabBarLoginViewController.swift */,
+				1B3081172A122C7D005F5CED /* LoginViewController.swift */,
+				1B30811B2A123D8D005F5CED /* LogoutViewController.swift */,
 			);
 			path = CombineScreen;
 			sourceTree = "<group>";
@@ -492,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3081182A122C7D005F5CED /* LoginViewController.swift in Sources */,
 				1BB50E7A2A0CD80B00E0F89A /* ForthVC.swift in Sources */,
 				1BB50E742A0CC17100E0F89A /* ThirdVC.swift in Sources */,
 				1BE0995E2A0B64AE00211801 /* SecondViewController.swift in Sources */,
@@ -509,6 +519,7 @@
 				1BDDA25F29E6C12400D06376 /* JobViewController.swift in Sources */,
 				1BDDA23B29E6618800D06376 /* CustomSegmentControl.swift in Sources */,
 				1B80FA292A0E5C7D00B64701 /* PatientViewController.swift in Sources */,
+				1B30811C2A123D8D005F5CED /* LogoutViewController.swift in Sources */,
 				1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */,
 				1B37605D29F1102C000D4107 /* ContactsViewController.swift in Sources */,
 				1B37825329F293CB00E01236 /* DatePickerDemoViewController.swift in Sources */,
@@ -556,6 +567,7 @@
 				1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */,
 				1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */,
 				1BDFA23429ED1B8F00340837 /* ArtistsModel.swift in Sources */,
+				1B30811A2A123745005F5CED /* TabBarLoginViewController.swift in Sources */,
 				1BAFEFCE29F8D8E900BCEA23 /* ScrollViewController.swift in Sources */,
 				1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */,
 				1BDDA23D29E68FEC00D06376 /* TableContentViewController.swift in Sources */,

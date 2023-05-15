@@ -9,20 +9,29 @@ import UIKit
 
 class PatientViewController: UIViewController {
 
+    //MARK: - IBOutlets
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
     
-    let arrayOfPatients = ["PaulZZ Demo", "MaxZZ Demo", "Nancie Demo", "Alfred ZZDemo", "Freddie ZZDemo", "Erica ZZDemo", "Bellonna ZZDemo", "Alexander ZZDemo", "PaulZZ Demo", "MaxZZ Demo", "Nancie Demo", "Alfred ZZDemo", "Freddie ZZDemo", "Erica ZZDemo", "Bellonna ZZDemo", "Alexander ZZDemo"]
-    var searchResult: [String] = []
-    var isSearchActive: Bool = false
+    //MARK: - Private Variables
+    private let arrayOfPatients = ["Paul ZZDemo", "Max ZZDemo", "Davida ZZDemo", "Nancie ZZDemo", "Alfred ZZDemo", "Freddie ZZDemo", "Erica ZZDemo", "Bellanonna ZZDemo", "Alexander ZZDemo", "Christopher ZZDemo", "Maximiliano ZZDemo", "Oliver ZZDemo", "Paul ZZDemo", "Max ZZDemo", "Davida ZZDemo", "Nancie ZZDemo", "Alfred ZZDemo", "Freddie ZZDemo", "Erica ZZDemo", "Bellanonna ZZDemo", "Alexander ZZDemo", "Christopher ZZDemo", "Maximiliano ZZDemo", "Oliver ZZDemo"]
+    private var searchResult: [String] = []
+    private var isSearchActive: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        preferredContentSize = CGSizeMake(450, 700)
+        setupSearchBar()
+    }
+    
+    //MARK: - Private method
+    private func setupSearchBar() {
         let image = UIImage()
-        searchBar.setBackgroundImage(image, for: .any, barMetrics:  .defaultPrompt)
+        searchBar.setBackgroundImage(image, for: .top, barMetrics: .defaultPrompt)
     }
 }
 
+//MARK: - UITableViewDataSource
 extension PatientViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         isSearchActive ? searchResult.count : arrayOfPatients.count
@@ -37,16 +46,14 @@ extension PatientViewController: UITableViewDataSource {
     }
 }
 
+//MARK: - UITableViewDelegate
 extension PatientViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        dismiss(animated: true)
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         50
     }
 }
 
+//MARK: - UISearchBarDelegate
 extension PatientViewController : UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

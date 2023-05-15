@@ -14,6 +14,10 @@ class CombineScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
@@ -41,6 +45,17 @@ extension CombineScreenViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = UIStoryboard(name: arrayOfScreen[indexPath.row].storyBoard, bundle: nil).instantiateViewController(withIdentifier: arrayOfScreen[indexPath.row].viewController)
+        navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+extension CombineScreenViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y <= 0  {
+            navigationItem.largeTitleDisplayMode = .always
+        } else {
+            navigationItem.largeTitleDisplayMode = .always
+        }
     }
 }
