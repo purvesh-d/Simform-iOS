@@ -16,6 +16,8 @@ class PFirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .brown
+        navigationItem.title = "First View Controller"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,17 +27,14 @@ class PFirstViewController: UIViewController {
     
     //MARK: - Private method
     private func setupNavigation() {
-        view.backgroundColor = .brown
-        navigationItem.title = "First View Controller"  
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .red
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+         appearance.backgroundColor = .red
+         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
     @IBAction func goToSecondVC(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         if let secondVC = storyboard.instantiateViewController(withIdentifier: "PSecondViewController") as? PSecondViewController {
-            //secondVC.delegateBackward = self
             secondVC.fname = tfFirstName.text ?? " "
             navigationController?.pushViewController(secondVC, animated: true)
         }

@@ -14,9 +14,9 @@ struct ComponentsModel {
     static private let autoLayoutStoryBoard = "Main"
     static private let UIComponentsStoryBoardOne = "UIComponents"
     static private let UIComponentsStoryBoardTwo = "UIComponents2"
+    static private let UINavigationController = "NavigationController"
     
     static func getData() -> [ComponentsModel] {
-        
         return [
             
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardOne, viewController: "LabelViewController", title: "UILabel"),
@@ -41,10 +41,14 @@ struct ComponentsModel {
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardOne, viewController: "WebDemoViewController", title: "WKWebView"),
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardOne, viewController: "SearchBarDemoViewController", title: "UISearchBar"),
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardOne, viewController: "StackViewDemoViewController", title: "Stack view"),
+            
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardTwo, viewController: "ToolBarDemoViewController", title: "UIToolBar"),
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardTwo, viewController: "PickerDemoViewController", title: "UIPickerView"),
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardTwo, viewController: "DatePickerDemoViewController", title: "UIDatePicker"),
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardTwo, viewController: "MapViewController", title: "UIMapView"),
+            
+            ComponentsModel(storyBoard: ComponentsModel.UINavigationController, viewController: "FirstViewController", title: "Segue Demo"),
+            ComponentsModel(storyBoard: ComponentsModel.UINavigationController, viewController: "PatientNavigationViewController", title: "UINavigationController Patient Demo"),
         ]
     }
 }

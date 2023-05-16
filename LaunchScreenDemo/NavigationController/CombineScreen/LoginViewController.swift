@@ -9,8 +9,10 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var tfPassword: UITextField!
-    @IBOutlet weak var tfUsername: UITextField!
+    //MARK: - IBOutlets
+    @IBOutlet private weak var tfPassword: UITextField!
+    @IBOutlet private weak var tfUsername: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,7 +22,7 @@ class LoginViewController: UIViewController {
             guard let tabbarVC = self.storyboard?.instantiateViewController(withIdentifier: "TabBarLoginViewController") else {
                 return
             }
-            UserDefaults.standard.set("vidhi", forKey: "password")
+            LoginUpdates.loginDetails.saveDetails(name: tfUsername.text ?? "", password: tfPassword.text ?? "")
             tabbarVC.modalPresentationStyle = .fullScreen
             tabbarVC.modalTransitionStyle = .flipHorizontal
             navigationController?.present(tabbarVC, animated: true)

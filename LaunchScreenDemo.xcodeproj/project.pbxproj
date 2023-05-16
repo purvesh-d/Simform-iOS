@@ -101,7 +101,10 @@
 		1BE8C0E329EE915300FC3632 /* ActivityIndicatorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */; };
 		1BE8C0E529EEA05C00FC3632 /* WebDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */; };
 		1BE8C0EB29EEA8E300FC3632 /* Demo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */; };
+		1BE8CEBA2A13828800649817 /* PatientNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8CEB92A13828800649817 /* PatientNavigationViewController.swift */; };
+		1BE8CEC92A1394BC00649817 /* LoginUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8CEC82A1394BC00649817 /* LoginUpdates.swift */; };
 		1BEC062B2A00C9F6009F69EE /* DemoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC062A2A00C9F6009F69EE /* DemoScreenViewController.swift */; };
+		1BEC8E5A2A13B79700EF9BB3 /* ThirdDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC8E592A13B79700EF9BB3 /* ThirdDemoViewController.swift */; };
 		1BF4D7B229F63BB500770E98 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4D7B129F63BB500770E98 /* MapViewController.swift */; };
 		1BF950072A02385900593C54 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF950062A02385900593C54 /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -204,7 +207,10 @@
 		1BE8C0E229EE915300FC3632 /* ActivityIndicatorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorDemoViewController.swift; sourceTree = "<group>"; };
 		1BE8C0E429EEA05C00FC3632 /* WebDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDemoViewController.swift; sourceTree = "<group>"; };
 		1BE8C0EA29EEA8E300FC3632 /* Demo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Demo.pdf; sourceTree = "<group>"; };
+		1BE8CEB92A13828800649817 /* PatientNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientNavigationViewController.swift; sourceTree = "<group>"; };
+		1BE8CEC82A1394BC00649817 /* LoginUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUpdates.swift; sourceTree = "<group>"; };
 		1BEC062A2A00C9F6009F69EE /* DemoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScreenViewController.swift; sourceTree = "<group>"; };
+		1BEC8E592A13B79700EF9BB3 /* ThirdDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDemoViewController.swift; sourceTree = "<group>"; };
 		1BF4D7B129F63BB500770E98 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1BF950062A02385900593C54 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +257,7 @@
 			children = (
 				1B80FA282A0E5C7D00B64701 /* PatientViewController.swift */,
 				1B80FA2B2A0E605A00B64701 /* PatientTableViewCell.swift */,
+				1BE8CEB92A13828800649817 /* PatientNavigationViewController.swift */,
 			);
 			path = PatientDemo;
 			sourceTree = "<group>";
@@ -348,6 +355,7 @@
 				1B3081192A123745005F5CED /* TabBarLoginViewController.swift */,
 				1B3081172A122C7D005F5CED /* LoginViewController.swift */,
 				1B30811B2A123D8D005F5CED /* LogoutViewController.swift */,
+				1BE8CEC82A1394BC00649817 /* LoginUpdates.swift */,
 			);
 			path = CombineScreen;
 			sourceTree = "<group>";
@@ -418,6 +426,7 @@
 				1BB50E522A0CA06100E0F89A /* Programmatically */,
 				1BB50E7D2A0D1EDE00E0F89A /* CombineScreen */,
 				1B80FA2A2A0E601B00B64701 /* PatientDemo */,
+				1BEC8E592A13B79700EF9BB3 /* ThirdDemoViewController.swift */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -519,6 +528,7 @@
 				1BDDA25F29E6C12400D06376 /* JobViewController.swift in Sources */,
 				1BDDA23B29E6618800D06376 /* CustomSegmentControl.swift in Sources */,
 				1B80FA292A0E5C7D00B64701 /* PatientViewController.swift in Sources */,
+				1BEC8E5A2A13B79700EF9BB3 /* ThirdDemoViewController.swift in Sources */,
 				1B30811C2A123D8D005F5CED /* LogoutViewController.swift in Sources */,
 				1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */,
 				1B37605D29F1102C000D4107 /* ContactsViewController.swift in Sources */,
@@ -529,6 +539,7 @@
 				1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */,
 				1BE2D3712A0E1D4B00E76B0F /* ComponentsModel.swift in Sources */,
 				1B3EAC322A0BAC08003E6E72 /* PSecondViewController.swift in Sources */,
+				1BE8CEBA2A13828800649817 /* PatientNavigationViewController.swift in Sources */,
 				1B80FA2C2A0E605A00B64701 /* PatientTableViewCell.swift in Sources */,
 				1BDCAE082A0BC5E500E10281 /* PThirdViewController.swift in Sources */,
 				1B37605929F109F0000D4107 /* TabBarDemoViewController.swift in Sources */,
@@ -539,6 +550,7 @@
 				1BE8C0E129EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift in Sources */,
 				1BB50E7C2A0D01D600E0F89A /* FifthVC.swift in Sources */,
 				1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */,
+				1BE8CEC92A1394BC00649817 /* LoginUpdates.swift in Sources */,
 				1B37605F29F11050000D4107 /* MoreViewController.swift in Sources */,
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
 				1BE4BDEA29F2563F00F946B5 /* ToolBarPropertyDemoViewController.swift in Sources */,

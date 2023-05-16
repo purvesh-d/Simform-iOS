@@ -20,7 +20,7 @@ class PatientViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        preferredContentSize = CGSizeMake(450, 700)
+        navigationItem.hidesBackButton = true
         setupSearchBar()
     }
     
@@ -55,7 +55,6 @@ extension PatientViewController: UITableViewDelegate {
 
 //MARK: - UISearchBarDelegate
 extension PatientViewController : UISearchBarDelegate {
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchResult = searchText.isEmpty ? arrayOfPatients : arrayOfPatients.filter { $0.localizedCaseInsensitiveContains(searchText)}
         
