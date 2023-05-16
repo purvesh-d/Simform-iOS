@@ -9,8 +9,9 @@ import UIKit
 
 class CombineScreenViewController: UIViewController {
 
+    //MARK: - IBOutlet
     @IBOutlet private weak var tableView: UITableView!
-    var arrayOfScreen = ComponentsModel.getData()
+    private var arrayOfScreen = ComponentsModel.getData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class CombineScreenViewController: UIViewController {
     }
 }
 
+//MARK: - UITableViewDataSource
 extension CombineScreenViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,21 +43,12 @@ extension CombineScreenViewController: UITableViewDataSource {
     }
 }
 
+//MARK: - UITableViewDelegate
 extension CombineScreenViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = UIStoryboard(name: arrayOfScreen[indexPath.row].storyBoard, bundle: nil).instantiateViewController(withIdentifier: arrayOfScreen[indexPath.row].viewController)
-        navigationItem.largeTitleDisplayMode = .never
+        viewController.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
-extension CombineScreenViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y <= 0  {
-            navigationItem.largeTitleDisplayMode = .always
-        } else {
-            navigationItem.largeTitleDisplayMode = .always
-        }
-    }
-}

@@ -17,6 +17,7 @@ class LogoutViewController: UIViewController {
         guard let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") else {
             return
         }
+        LoginUpdates.loginDetails.removeDetails()
         loginVC.modalPresentationStyle = .fullScreen
         loginVC.modalTransitionStyle = .flipHorizontal
         navigationController?.present(loginVC, animated: true)

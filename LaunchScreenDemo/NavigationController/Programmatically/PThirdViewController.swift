@@ -10,7 +10,6 @@ import UIKit
 class PThirdViewController: UIViewController {
 
     var fnameFromSecond = ""
-    //weak var delegateThird: PassDataToFirstVC?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +18,10 @@ class PThirdViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //setupNavigationBar()
+        setupNavigationBar()
     }
     
+    //MARK: - private method
     private func setupNavigationBar() {
         navigationItem.title = "Third View Controller"
         navigationItem.backButtonTitle = "Back"
@@ -36,7 +36,6 @@ class PThirdViewController: UIViewController {
         if let forthVC = storyboard.instantiateViewController(withIdentifier: "PForthViewController") as? PForthViewController {
             forthVC.fnameFromThird = fnameFromSecond
             forthVC.delegate = self
-            //forthVC.delegate = delegateThird
             navigationController?.pushViewController(forthVC, animated: true)
         }
     }

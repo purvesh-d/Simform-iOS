@@ -9,12 +9,13 @@ import UIKit
 
 class ComponentsTableViewCell: UITableViewCell {
 
-    @IBOutlet private weak var btnComponent: UIButton!
+    //MARK: - IBOutlet
+    @IBOutlet private weak var lblComponents: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     func configCell(data: ComponentsModel) {
-        btnComponent.setTitle(data.title, for: .normal)
+        lblComponents.text = data.title
     }
 }

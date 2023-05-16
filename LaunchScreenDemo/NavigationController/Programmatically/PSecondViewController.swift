@@ -11,7 +11,6 @@ class PSecondViewController: UIViewController {
     
     //MARK: - IBOutlet
     @IBOutlet private weak var lblFirstName: UILabel!
-    //weak var delegateBackward: PassDataToFirstVC?
     var fname = ""
     
     override func viewDidLoad() {
@@ -23,7 +22,7 @@ class PSecondViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //setupNavigatioBar()
+        setupNavigatioBar()
     }
     
     //MARK: - Private methods
@@ -62,7 +61,6 @@ class PSecondViewController: UIViewController {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         if let thirdVC = storyboard.instantiateViewController(withIdentifier: "PThirdViewController") as? PThirdViewController {
             thirdVC.fnameFromSecond = fname
-            //thirdVC.delegateThird = delegateBackward
             navigationController?.pushViewController(thirdVC, animated: true)
         }
     }
@@ -81,7 +79,6 @@ extension PSecondViewController: PassDataToFirstVC {
     func passData(data: String) {
         if let secondVC = navigationController?.viewControllers.first as? PFirstViewController {
             secondVC.passData(data: data)
-            lblFirstName.text = data
         }
     }
 }
