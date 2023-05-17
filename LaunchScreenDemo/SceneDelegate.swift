@@ -17,12 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         print(#function)
         
-//        let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
-//        let rootVC = LoginUpdates.loginDetails.isLoggedIn() ? storyboard.instantiateViewController(withIdentifier: "TabBarLoginViewController") : storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-//        let navigationController = UINavigationController(rootViewController: rootVC)
-//        window?.rootViewController = navigationController
-//        navigationController.setNavigationBarHidden(true, animated: true)
-//        window?.makeKeyAndVisible()
+        let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
+        let rootVC = LoginUpdates.loginDetails.isLoggedIn() ? storyboard.instantiateViewController(withIdentifier: "TabBarLoginViewController") : storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        let navigationController = UINavigationController(rootViewController: rootVC)
+        window?.rootViewController = navigationController
+        navigationController.setNavigationBarHidden(true, animated: true)
+        window?.makeKeyAndVisible()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

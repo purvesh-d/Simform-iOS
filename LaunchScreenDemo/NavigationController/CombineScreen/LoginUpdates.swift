@@ -7,18 +7,18 @@
 
 import Foundation
 struct LoginUpdates {
-        
+    
+    //MARK: - Variables
     static let loginDetails = LoginUpdates()
     let userDefaults = UserDefaults.standard
     
+    //MARK: - Methods
     func isLoggedIn() -> Bool {
         return (userDefaults.string(forKey: "UserId") != nil)
     }
     
     func saveDetails(name: String, password: String) {
         userDefaults.set(UUID().uuidString, forKey: "UserId")
-        userDefaults.set(name, forKey: "Username")
-        userDefaults.set(password, forKey: "Password")
     }
     
     func removeDetails() {
@@ -30,5 +30,4 @@ struct LoginUpdates {
     func getUserName() -> String {
         userDefaults.string(forKey: "Username") ?? ""
     }
-    
 }

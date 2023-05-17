@@ -9,7 +9,9 @@ import UIKit
 
 class PThirdViewController: UIViewController {
 
+    //MARK: - Variables
     var fnameFromSecond = ""
+    weak var delegateThird: PassDataToFirstVC?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,7 @@ class PThirdViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNavigationBar()
+       setupNavigationBar()
     }
     
     //MARK: - private method
@@ -35,16 +37,8 @@ class PThirdViewController: UIViewController {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         if let forthVC = storyboard.instantiateViewController(withIdentifier: "PForthViewController") as? PForthViewController {
             forthVC.fnameFromThird = fnameFromSecond
-            forthVC.delegate = self
+            forthVC.delegate = delegateThird
             navigationController?.pushViewController(forthVC, animated: true)
-        }
-    }
-}
-
-extension PThirdViewController: PassDataToFirstVC {
-    func passData(data: String) {
-        if let firstVC = navigationController?.viewControllers.first as? PFirstViewController {
-            firstVC.passData(data: data)
         }
     }
 }

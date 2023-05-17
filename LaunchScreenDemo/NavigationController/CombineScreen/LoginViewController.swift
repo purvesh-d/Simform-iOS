@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
             LoginUpdates.loginDetails.saveDetails(name: tfUsername.text ?? "", password: tfPassword.text ?? "")
             tabbarVC.modalPresentationStyle = .fullScreen
             tabbarVC.modalTransitionStyle = .flipHorizontal
-            navigationController?.present(tabbarVC, animated: true)
+            navigationController?.pushViewController(tabbarVC, animated: true)
         }
     }
 }

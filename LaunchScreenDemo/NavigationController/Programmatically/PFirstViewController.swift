@@ -18,6 +18,9 @@ class PFirstViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .brown
         navigationItem.title = "First View Controller"
+        
+        //To hide NavigationBar
+        //navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +39,8 @@ class PFirstViewController: UIViewController {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         if let secondVC = storyboard.instantiateViewController(withIdentifier: "PSecondViewController") as? PSecondViewController {
             secondVC.fname = tfFirstName.text ?? " "
+            secondVC.delegateSecond = self
+            secondVC.delegateBackward = self
             navigationController?.pushViewController(secondVC, animated: true)
         }
     }

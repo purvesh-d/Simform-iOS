@@ -12,6 +12,7 @@ class PatientTableViewCell: UITableViewCell {
     //MARK: - IBOutlets
     @IBOutlet private weak var lblname: UILabel!
     @IBOutlet private weak var patientImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

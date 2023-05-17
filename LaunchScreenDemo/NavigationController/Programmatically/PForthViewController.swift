@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: - Protocol for backward data passing
 protocol PassDataToFirstVC: AnyObject {
     func passData(data: String)
 }
@@ -23,6 +24,7 @@ class PForthViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .darkGray
         lblFname.text = fnameFromThird
+        navigationItem.title = "Forth View Controller"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,7 +37,6 @@ class PForthViewController: UIViewController {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .orange
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        navigationItem.title = "Forth View Controller"
     }
     
     @IBAction func goBackToFirstVC(_ sender: UIButton) {
