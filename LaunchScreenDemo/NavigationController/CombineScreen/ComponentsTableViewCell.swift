@@ -14,7 +14,7 @@ class ComponentsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+
     func configCell(data: ComponentsModel) {
         lblComponents.text = data.title
     }

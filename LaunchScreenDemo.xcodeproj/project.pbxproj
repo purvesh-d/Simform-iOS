@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0663C82A1491070091A456 /* FirstDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0663C72A1491070091A456 /* FirstDemoViewController.swift */; };
+		1B0663CE2A1499C60091A456 /* NavigationSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0663CD2A1499C60091A456 /* NavigationSViewController.swift */; };
 		1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21DE8029E01823000730B1 /* NewViewController.swift */; };
 		1B3081182A122C7D005F5CED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3081172A122C7D005F5CED /* LoginViewController.swift */; };
 		1B30811A2A123745005F5CED /* TabBarLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3081192A123745005F5CED /* TabBarLoginViewController.swift */; };
@@ -110,6 +112,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0663C72A1491070091A456 /* FirstDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDemoViewController.swift; sourceTree = "<group>"; };
+		1B0663CD2A1499C60091A456 /* NavigationSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSViewController.swift; sourceTree = "<group>"; };
 		1B21DE8029E01823000730B1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		1B3081172A122C7D005F5CED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1B3081192A123745005F5CED /* TabBarLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLoginViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +230,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0663CF2A14B78F0091A456 /* NavigationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1B0663CD2A1499C60091A456 /* NavigationSViewController.swift */,
+				1B0663C72A1491070091A456 /* FirstDemoViewController.swift */,
+				1BEC8E592A13B79700EF9BB3 /* ThirdDemoViewController.swift */,
+			);
+			path = NavigationDemo;
+			sourceTree = "<group>";
+		};
 		1B37605729F109B1000D4107 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,9 +269,9 @@
 		1B80FA2A2A0E601B00B64701 /* PatientDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1BE8CEB92A13828800649817 /* PatientNavigationViewController.swift */,
 				1B80FA282A0E5C7D00B64701 /* PatientViewController.swift */,
 				1B80FA2B2A0E605A00B64701 /* PatientTableViewCell.swift */,
-				1BE8CEB92A13828800649817 /* PatientNavigationViewController.swift */,
 			);
 			path = PatientDemo;
 			sourceTree = "<group>";
@@ -426,7 +440,7 @@
 				1BB50E522A0CA06100E0F89A /* Programmatically */,
 				1BB50E7D2A0D1EDE00E0F89A /* CombineScreen */,
 				1B80FA2A2A0E601B00B64701 /* PatientDemo */,
-				1BEC8E592A13B79700EF9BB3 /* ThirdDemoViewController.swift */,
+				1B0663CF2A14B78F0091A456 /* NavigationDemo */,
 			);
 			path = NavigationController;
 			sourceTree = "<group>";
@@ -545,6 +559,7 @@
 				1B37605929F109F0000D4107 /* TabBarDemoViewController.swift in Sources */,
 				1BC095BF29F7A6250042ED7A /* SegueFirstViewController.swift in Sources */,
 				1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */,
+				1B0663CE2A1499C60091A456 /* NavigationSViewController.swift in Sources */,
 				1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */,
 				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
 				1BE8C0E129EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift in Sources */,
@@ -596,6 +611,7 @@
 				1B8E43FF29E9815B00622504 /* DemoData.swift in Sources */,
 				1B9EC8EB29F92EC900168A69 /* ImagesModel.swift in Sources */,
 				1BDDA25929E6BC8C00D06376 /* FindJobModel.swift in Sources */,
+				1B0663C82A1491070091A456 /* FirstDemoViewController.swift in Sources */,
 				1BC095C329F7C8F40042ED7A /* ButtonPropertiesViewController.swift in Sources */,
 				1B21DE8129E01823000730B1 /* NewViewController.swift in Sources */,
 				1B4B6E7929E8018C00CCD5FF /* DemoTableViewController.swift in Sources */,
@@ -755,6 +771,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -787,6 +804,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

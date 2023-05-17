@@ -20,7 +20,7 @@ class LogoutViewController: UIViewController {
         LoginUpdates.loginDetails.removeDetails()
         loginVC.modalPresentationStyle = .fullScreen
         loginVC.modalTransitionStyle = .flipHorizontal
-        navigationController?.present(loginVC, animated: true)
+        navigationController?.pushViewController(loginVC, animated: true)
     }
 }
 

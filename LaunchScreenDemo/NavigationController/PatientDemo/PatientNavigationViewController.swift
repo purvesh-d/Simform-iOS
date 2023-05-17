@@ -17,6 +17,7 @@ class PatientNavigationViewController: UIViewController {
         let storyboard = UIStoryboard(name: "NavigationController", bundle: nil)
         let patientVC = storyboard.instantiateViewController(withIdentifier: "PatientViewController")
         patientVC.modalPresentationStyle = .popover
+        patientVC.preferredContentSize = CGSize(width: view.bounds.width/2, height: 700)
         if let popoverVC = patientVC.popoverPresentationController {
             popoverVC.sourceView = sender
         }
