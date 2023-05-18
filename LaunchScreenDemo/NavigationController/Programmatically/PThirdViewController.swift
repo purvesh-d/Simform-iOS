@@ -30,7 +30,7 @@ class PThirdViewController: UIViewController {
         navigationItem.backButtonTitle = "Back"
         
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .green
+        appearance.backgroundColor = .cyan
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     

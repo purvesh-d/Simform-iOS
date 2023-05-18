@@ -25,7 +25,7 @@ class PFirstViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //setupNavigation()
+        setupNavigation()
     }
     
     //MARK: - Private method
