@@ -20,7 +20,7 @@ class PThirdViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       setupNavigationBar()
+        setupNavigationBar()
     }
     
     //MARK: - private method
