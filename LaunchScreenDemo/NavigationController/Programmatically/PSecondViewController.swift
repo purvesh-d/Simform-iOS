@@ -25,7 +25,7 @@ class PSecondViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //setupNavigationBarAppearance()
+        setupNavigationBarAppearance()
     }
     
     //MARK: - Private methods
