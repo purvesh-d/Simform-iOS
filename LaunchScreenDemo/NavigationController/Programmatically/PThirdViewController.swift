@@ -16,6 +16,7 @@ class PThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple
+        setupNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,7 +30,7 @@ class PThirdViewController: UIViewController {
         navigationItem.backButtonTitle = "Back"
         
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .cyan
+        appearance.backgroundColor = .green
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
