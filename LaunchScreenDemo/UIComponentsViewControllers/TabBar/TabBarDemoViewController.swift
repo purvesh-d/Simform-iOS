@@ -12,9 +12,9 @@ class TabBarDemoViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.delegate = self
-        self.selectedIndex = 1
-        self.tabBar.items?[1].badgeValue = "3"
+        delegate = self
+        selectedIndex = 1
+        tabBar.items?[1].badgeValue = "3"
     }
 }
 

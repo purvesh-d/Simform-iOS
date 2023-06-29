@@ -37,17 +37,17 @@ extension TableContentViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let oddcell = tableView.dequeueReusableCell(withIdentifier: "IndexTableViewCell") as? IndexTableViewCell else {
-            return UITableViewCell()
-        }
-        guard let evencell = tableView.dequeueReusableCell(withIdentifier: "EvenTableViewCell") as? EvenTableViewCell else {
-            return UITableViewCell()
-        }
         if indexPath.row % 2 == 0 {
+            guard let evencell = tableView.dequeueReusableCell(withIdentifier: "EvenTableViewCell") as? EvenTableViewCell else {
+                return UITableViewCell()
+            }
             evencell.lblText.text = "Even: \(indexPath.row)"
             evencell.backgroundColor = .orange
             return evencell
         } else {
+            guard let oddcell = tableView.dequeueReusableCell(withIdentifier: "IndexTableViewCell") as? IndexTableViewCell else {
+                return UITableViewCell()
+            }
             oddcell.lblIndex.text = "Odd: \(indexPath.row)"
             oddcell.backgroundColor = .cyan
             return oddcell

@@ -23,7 +23,6 @@ class JobViewController: UIViewController {
     //MARK: - Button action
     @IBAction func btnSubmitAction(_ sender: UIButton) {
         let filterData = arrCompany.filter{$0.isSelected}
-        print(filterData.count)
     }
 }
 

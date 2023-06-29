@@ -10,7 +10,7 @@ import UIKit
 class ImagePickerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     //MARK: - IBOutlet
-    @IBOutlet private weak var image: UIImageView!
+    @IBOutlet private weak var imageview: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
         guard let img = info[.editedImage] else {
             return
         }
-        self.image.image = img as? UIImage
+        imageview.image = img as? UIImage
         print(info[.editedImage] ?? "")
         print(info[.cropRect] ?? "")
         print(info[.imageURL] ?? "")

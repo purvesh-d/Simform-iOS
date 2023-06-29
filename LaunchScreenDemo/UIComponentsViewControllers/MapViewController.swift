@@ -21,6 +21,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //satelite mode
         //mapView.mapType = MKMapType.satellite
         mapView.delegate = self
         checkLocationServices()

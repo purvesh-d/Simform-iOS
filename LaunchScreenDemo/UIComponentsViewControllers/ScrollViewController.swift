@@ -16,13 +16,13 @@ class ScrollViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.refreshData  = UIRefreshControl()
-        self.refreshData.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        refreshData  = UIRefreshControl()
+        refreshData.addTarget(self, action: #selector(loadData), for: .valueChanged)
         scrollView.addSubview(refreshData)
         scrollView.alwaysBounceVertical = true
         scrollView.bounces = true
     }
     @objc func loadData() {
-        self.refreshData.endRefreshing()
+        refreshData.endRefreshing()
     }
 }
