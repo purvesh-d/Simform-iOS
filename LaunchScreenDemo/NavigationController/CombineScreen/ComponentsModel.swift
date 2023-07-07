@@ -17,6 +17,8 @@ struct ComponentsModel {
     static private let UIComponentsStoryBoardOne = "UIComponents"
     static private let UIComponentsStoryBoardTwo = "UIComponents2"
     static private let UINavigationController = "NavigationController"
+    static private let WebServicesURLSession = "WebServices"
+    static private let WebServicesAlamofire = "AlamofireDemo"
     
     //MARK: - static method
     static func getData() -> [ComponentsModel] {
@@ -47,9 +49,16 @@ struct ComponentsModel {
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardTwo, viewController: "PickerDemoViewController", title: "UIPickerView"),
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardTwo, viewController: "DatePickerDemoViewController", title: "UIDatePicker"),
             ComponentsModel(storyBoard: ComponentsModel.UIComponentsStoryBoardTwo, viewController: "MapViewController", title: "UIMapView"),
+            
             ComponentsModel(storyBoard: ComponentsModel.UINavigationController, viewController: "FirstViewController", title: "Segue Demo"),
             ComponentsModel(storyBoard: ComponentsModel.UINavigationController, viewController: "PFirstViewController", title: "UINavigationController Programmatically"),
-            ComponentsModel(storyBoard: ComponentsModel.UINavigationController, viewController: "PatientNavigationViewController", title: "UINavigationController Patient Demo")
+            ComponentsModel(storyBoard: ComponentsModel.UINavigationController, viewController: "PatientNavigationViewController", title: "UINavigationController Patient Demo"),
+            
+            ComponentsModel(storyBoard: ComponentsModel.WebServicesURLSession, viewController: "UsersViewController", title: "User List using GET"),
+            ComponentsModel(storyBoard: ComponentsModel.WebServicesURLSession, viewController: "LoginUserViewController", title: "URL Session"),
+            
+            ComponentsModel(storyBoard: ComponentsModel.WebServicesAlamofire, viewController: "RegisterUserViewController", title: "Alamofire Demo"),
+            ComponentsModel(storyBoard: ComponentsModel.WebServicesAlamofire, viewController: "RegUserViewController", title: "Alamofire Demo2")
         ]
     }
 }
