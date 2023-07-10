@@ -8,4 +8,6 @@ target 'LaunchScreenDemo' do
   # Pods for LaunchScreenDemo
 pod 'Alamofire'
 pod 'ReachabilitySwift'
+pod 'Kingfisher'
+pod 'SDWebImage'
 end

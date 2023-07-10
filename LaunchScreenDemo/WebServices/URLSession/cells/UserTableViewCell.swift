@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class UserTableViewCell: UITableViewCell {
 
@@ -23,16 +24,8 @@ class UserTableViewCell: UITableViewCell {
     
     // MARK: - Method for configuring cell
     func configCells(data: UserData) {
-        if let url = URL(string: data.avatar ?? "") {
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                guard let images = data else {
-                    return
-                }
-                DispatchQueue.main.async {
-                    self.avatarImg.image = UIImage(data: images)
-                }
-            }.resume()
-        }
+        let url = URL(string: data.avatar ?? "")
+        avatarImg.sd_setImage(with: url)
         idLbl.text = String(data.id)
         emailLbl.text = data.email
         fnameLbl.text = data.first_name

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class JeweleryUpdateViewController: UIViewController {
     
@@ -25,16 +26,8 @@ class JeweleryUpdateViewController: UIViewController {
     
     //MARK: - Private methods
     private func setData() {
-        if let url = URL(string: product?.image ?? "") {
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                guard let images = data else {
-                    return
-                }
-                DispatchQueue.main.async {
-                    self.imageView.image = UIImage(data: images)
-                }
-            }.resume()
-        }
+        let url = URL(string: product?.image ?? "")
+        imageView.kf.setImage(with: url)
         titleLbl.text = product?.title
         priceLbl.text = "$\(product?.price ?? 0)"
         descriptionLbl.text = product?.description

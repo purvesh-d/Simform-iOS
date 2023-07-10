@@ -83,7 +83,6 @@
 		1BC095C129F7A7EB0042ED7A /* SegueSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC095C029F7A7EB0042ED7A /* SegueSecondViewController.swift */; };
 		1BC095C329F7C8F40042ED7A /* ButtonPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC095C229F7C8F40042ED7A /* ButtonPropertiesViewController.swift */; };
 		1BC0FF4C2A55671A00083F1F /* ProductRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0FF4B2A55671A00083F1F /* ProductRequestModel.swift */; };
-		1BC0FF502A5568EF00083F1F /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0FF4F2A5568EF00083F1F /* ProductCollectionViewCell.swift */; };
 		1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1929E52B4600AC4827 /* SliderViewController.swift */; };
 		1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */; };
 		1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */; };
@@ -224,7 +223,6 @@
 		1BC095C029F7A7EB0042ED7A /* SegueSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueSecondViewController.swift; sourceTree = "<group>"; };
 		1BC095C229F7C8F40042ED7A /* ButtonPropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPropertiesViewController.swift; sourceTree = "<group>"; };
 		1BC0FF4B2A55671A00083F1F /* ProductRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestModel.swift; sourceTree = "<group>"; };
-		1BC0FF4F2A5568EF00083F1F /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		1BC51A1929E52B4600AC4827 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
@@ -346,7 +344,6 @@
 			isa = PBXGroup;
 			children = (
 				1B30BCC12A541D6000D084F3 /* UsersTableViewCell.swift */,
-				1BC0FF4F2A5568EF00083F1F /* ProductCollectionViewCell.swift */,
 				1BE95A112A55AB87005C5EA8 /* JeweleryTableViewCell.swift */,
 			);
 			path = cell;
@@ -871,7 +868,6 @@
 				1BD6D781299CB1C0000B1CE4 /* AppDelegate.swift in Sources */,
 				1B30BCDB2A54579300D084F3 /* CustomError.swift in Sources */,
 				1BC0FF4C2A55671A00083F1F /* ProductRequestModel.swift in Sources */,
-				1BC0FF502A5568EF00083F1F /* ProductCollectionViewCell.swift in Sources */,
 				1BE4BDEA29F2563F00F946B5 /* ToolBarPropertyDemoViewController.swift in Sources */,
 				1BE95A0C2A559901005C5EA8 /* RegUserViewController.swift in Sources */,
 				1BB50E652A0CAD2B00E0F89A /* CustomSegue.swift in Sources */,
