@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class JeweleryTableViewCell: UITableViewCell {
 
@@ -20,14 +21,8 @@ class JeweleryTableViewCell: UITableViewCell {
     // MARK: - Method for configuring cell
     func configureCell(product: ProductRequestModel) {
         productImg.layer.cornerRadius = 10
-        if let url = URL(string: product.image) {
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                guard let imageData = data else { return }
-                DispatchQueue.main.async {
-                    self.productImg.image = UIImage(data: imageData)
-                }
-            }.resume()
-        }
+        let url = URL(string: product.image)
+        productImg.kf.setImage(with: url)
         titleLbl.text = product.title
         priceLbl.text = String(product.price)
     }
