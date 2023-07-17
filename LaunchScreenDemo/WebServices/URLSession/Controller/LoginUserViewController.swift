@@ -15,7 +15,6 @@ class LoginUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
     }
 
     @IBAction func loginBtnAction(_ sender: UIButton) {

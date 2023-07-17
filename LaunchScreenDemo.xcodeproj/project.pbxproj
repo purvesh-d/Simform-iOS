@@ -83,6 +83,12 @@
 		1BC095C129F7A7EB0042ED7A /* SegueSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC095C029F7A7EB0042ED7A /* SegueSecondViewController.swift */; };
 		1BC095C329F7C8F40042ED7A /* ButtonPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC095C229F7C8F40042ED7A /* ButtonPropertiesViewController.swift */; };
 		1BC0FF4C2A55671A00083F1F /* ProductRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0FF4B2A55671A00083F1F /* ProductRequestModel.swift */; };
+		1BC217DD2A6509D500990299 /* CustomControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC217DC2A6509D500990299 /* CustomControls.storyboard */; };
+		1BC217E02A650C6200990299 /* CustomRangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC217DF2A650C6200990299 /* CustomRangeSlider.swift */; };
+		1BC217E22A6511AF00990299 /* CustomControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC217E12A6511AF00990299 /* CustomControlsViewController.swift */; };
+		1BC217E82A65222000990299 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC217E72A65222000990299 /* CustomTextfield.swift */; };
+		1BC217EB2A65431D00990299 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC217EA2A65431D00990299 /* Extensions.swift */; };
+		1BC217EF2A654E6800990299 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC217EE2A654E6800990299 /* CustomButton.swift */; };
 		1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1929E52B4600AC4827 /* SliderViewController.swift */; };
 		1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */; };
 		1BC51A1E29E55CD400AC4827 /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */; };
@@ -223,6 +229,12 @@
 		1BC095C029F7A7EB0042ED7A /* SegueSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueSecondViewController.swift; sourceTree = "<group>"; };
 		1BC095C229F7C8F40042ED7A /* ButtonPropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPropertiesViewController.swift; sourceTree = "<group>"; };
 		1BC0FF4B2A55671A00083F1F /* ProductRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestModel.swift; sourceTree = "<group>"; };
+		1BC217DC2A6509D500990299 /* CustomControls.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomControls.storyboard; sourceTree = "<group>"; };
+		1BC217DF2A650C6200990299 /* CustomRangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRangeSlider.swift; sourceTree = "<group>"; };
+		1BC217E12A6511AF00990299 /* CustomControlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControlsViewController.swift; sourceTree = "<group>"; };
+		1BC217E72A65222000990299 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
+		1BC217EA2A65431D00990299 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1BC217EE2A654E6800990299 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		1BC51A1929E52B4600AC4827 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		1BC51A1B29E5441300AC4827 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		1BC51A1D29E55CD400AC4827 /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
@@ -537,6 +549,34 @@
 			path = CombineScreen;
 			sourceTree = "<group>";
 		};
+		1BC217DB2A6509A300990299 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				1BC217DE2A6509E300990299 /* View */,
+				1BC217DF2A650C6200990299 /* CustomRangeSlider.swift */,
+				1BC217E72A65222000990299 /* CustomTextfield.swift */,
+				1BC217EE2A654E6800990299 /* CustomButton.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		1BC217DE2A6509E300990299 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BC217DC2A6509D500990299 /* CustomControls.storyboard */,
+				1BC217E12A6511AF00990299 /* CustomControlsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BC217E92A6542F300990299 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BC217EA2A65431D00990299 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1BCD56DA2A53D3250024219C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,12 +677,14 @@
 				1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */,
 				1B37605529F0FD5D000D4107 /* UIComponents2.storyboard */,
 				1BE172C12A0B4E5300D6EF76 /* NavigationController.storyboard */,
+				1BC217DB2A6509A300990299 /* CustomControls */,
 				1B9D6E4D2A4E8F9B0094227A /* WebServices */,
 				1BE172C02A0B4E3000D6EF76 /* NavigationController */,
 				1B8E43FB29E97FD900622504 /* UIComponentsViewControllers */,
 				1B4E45FA29E90EDA0043A415 /* CollectionViewCells */,
 				1BDDA24229E693FE00D06376 /* TableViewCells */,
 				1B8E43F729E97F4100622504 /* Models */,
+				1BC217E92A6542F300990299 /* Extensions */,
 			);
 			path = LaunchScreenDemo;
 			sourceTree = "<group>";
@@ -752,6 +794,7 @@
 				1BDDA24629E6942F00D06376 /* IndexTableViewCell.xib in Resources */,
 				1B37605629F0FD5D000D4107 /* UIComponents2.storyboard in Resources */,
 				1B30BCA62A5403B100D084F3 /* AlamofireDemo.storyboard in Resources */,
+				1BC217DD2A6509D500990299 /* CustomControls.storyboard in Resources */,
 				1BD6D78D299CB1C1000B1CE4 /* LaunchScreen.storyboard in Resources */,
 				1BD6D78A299CB1C1000B1CE4 /* Assets.xcassets in Resources */,
 				1BDDA26529E6D07000D06376 /* StateTableViewCell.xib in Resources */,
@@ -848,6 +891,7 @@
 				1BC51A1A29E52B4600AC4827 /* SliderViewController.swift in Sources */,
 				1BDDA26129E6CE4800D06376 /* StateTableViewController.swift in Sources */,
 				1BE2D3712A0E1D4B00E76B0F /* ComponentsModel.swift in Sources */,
+				1BC217E02A650C6200990299 /* CustomRangeSlider.swift in Sources */,
 				1B3EAC322A0BAC08003E6E72 /* PSecondViewController.swift in Sources */,
 				1B30BCD42A5455F700D084F3 /* RegisterViewModel.swift in Sources */,
 				1BE8CEBA2A13828800649817 /* PatientNavigationViewController.swift in Sources */,
@@ -857,6 +901,7 @@
 				1BC095BF29F7A6250042ED7A /* SegueFirstViewController.swift in Sources */,
 				1BDDA24529E6942F00D06376 /* IndexTableViewCell.swift in Sources */,
 				1B0663CE2A1499C60091A456 /* NavigationSViewController.swift in Sources */,
+				1BC217E22A6511AF00990299 /* CustomControlsViewController.swift in Sources */,
 				1BC51A1C29E5441300AC4827 /* ProgressViewController.swift in Sources */,
 				1B65E52829E3EAED0090E749 /* LabelViewController.swift in Sources */,
 				1BE8C0E129EE7A3300FC3632 /* ImagePickerDataCollectionViewCell.swift in Sources */,
@@ -886,6 +931,7 @@
 				1BDFA23629ED404B00340837 /* AlbumsCollectionViewCell.swift in Sources */,
 				1BE8C0E529EEA05C00FC3632 /* WebDemoViewController.swift in Sources */,
 				1B790B0429F15A3F00E9A247 /* ToolBarDemoViewController.swift in Sources */,
+				1BC217EF2A654E6800990299 /* CustomButton.swift in Sources */,
 				1B37606129F1191C000D4107 /* StackViewDemoViewController.swift in Sources */,
 				1B30BCC82A54335E00D084F3 /* RegisterUserViewController.swift in Sources */,
 				1B8E43F629E949FD00622504 /* LabelExpandTableViewCell.swift in Sources */,
@@ -907,7 +953,9 @@
 				1BE8C0DF29EE769E00FC3632 /* PHPickerDemoViewController.swift in Sources */,
 				1B65E53E29E420B30090E749 /* SwitchViewController.swift in Sources */,
 				1B65E53C29E41CFF0090E749 /* CustomTextView.swift in Sources */,
+				1BC217EB2A65431D00990299 /* Extensions.swift in Sources */,
 				1BDFA23429ED1B8F00340837 /* ArtistsModel.swift in Sources */,
+				1BC217E82A65222000990299 /* CustomTextfield.swift in Sources */,
 				1B30811A2A123745005F5CED /* TabBarLoginViewController.swift in Sources */,
 				1BAFEFCE29F8D8E900BCEA23 /* ScrollViewController.swift in Sources */,
 				1BD6D783299CB1C0000B1CE4 /* SceneDelegate.swift in Sources */,

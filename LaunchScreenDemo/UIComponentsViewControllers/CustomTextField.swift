@@ -14,6 +14,4 @@ class CustomTextField: UITextField {
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }
-
-
 }

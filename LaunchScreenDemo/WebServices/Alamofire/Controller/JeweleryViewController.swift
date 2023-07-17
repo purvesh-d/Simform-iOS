@@ -24,7 +24,6 @@ class JeweleryViewController: UIViewController {
     }
     
     private func setupUI() {
-        navigationItem.hidesBackButton = true
         navigationItem.title = "Women's Jewelery"
         viewModel.delegate = self
         viewModel.getProduct()

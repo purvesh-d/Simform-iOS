@@ -19,6 +19,7 @@ struct ComponentsModel {
     static private let UINavigationController = "NavigationController"
     static private let WebServicesURLSession = "WebServices"
     static private let WebServicesAlamofire = "AlamofireDemo"
+    static private let CustomControls = "CustomControls"
     
     //MARK: - static method
     static func getData() -> [ComponentsModel] {
@@ -58,7 +59,9 @@ struct ComponentsModel {
             ComponentsModel(storyBoard: ComponentsModel.WebServicesURLSession, viewController: "LoginUserViewController", title: "URL Session"),
             
             ComponentsModel(storyBoard: ComponentsModel.WebServicesAlamofire, viewController: "RegisterUserViewController", title: "Alamofire Demo"),
-            ComponentsModel(storyBoard: ComponentsModel.WebServicesAlamofire, viewController: "RegUserViewController", title: "Alamofire Demo2")
+            ComponentsModel(storyBoard: ComponentsModel.WebServicesAlamofire, viewController: "RegUserViewController", title: "Alamofire Demo2"),
+            
+            ComponentsModel(storyBoard: ComponentsModel.CustomControls, viewController: "CustomControlsViewController", title: "Custom Controls")
         ]
     }
 }

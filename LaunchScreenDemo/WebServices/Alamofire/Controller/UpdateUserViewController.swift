@@ -23,7 +23,6 @@ class UpdateUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
         cardView.layer.cornerRadius = 20
         setUpUI()
     }
