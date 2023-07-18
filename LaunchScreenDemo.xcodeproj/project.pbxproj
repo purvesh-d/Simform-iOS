@@ -38,6 +38,8 @@
 		1B3EAC302A0BAAFA003E6E72 /* PFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3EAC2F2A0BAAF9003E6E72 /* PFirstViewController.swift */; };
 		1B3EAC322A0BAC08003E6E72 /* PSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3EAC312A0BAC08003E6E72 /* PSecondViewController.swift */; };
 		1B48D47329E43D7B00E90B02 /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */; };
+		1B4B13102A665DEE0097DFAE /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B130F2A665DEE0097DFAE /* RadioButton.swift */; };
+		1B4B13162A666F4B0097DFAE /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B13152A666F4B0097DFAE /* CheckBox.swift */; };
 		1B4B6E7529E7D59200CCD5FF /* StateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7429E7D59200CCD5FF /* StateData.swift */; };
 		1B4B6E7929E8018C00CCD5FF /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */; };
 		1B4B6E7F29E8094000CCD5FF /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */; };
@@ -184,6 +186,8 @@
 		1B3EAC2F2A0BAAF9003E6E72 /* PFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFirstViewController.swift; sourceTree = "<group>"; };
 		1B3EAC312A0BAC08003E6E72 /* PSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSecondViewController.swift; sourceTree = "<group>"; };
 		1B48D47229E43D7B00E90B02 /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
+		1B4B130F2A665DEE0097DFAE /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		1B4B13152A666F4B0097DFAE /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		1B4B6E7429E7D59200CCD5FF /* StateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateData.swift; sourceTree = "<group>"; };
 		1B4B6E7829E8018C00CCD5FF /* DemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
 		1B4B6E7E29E8094000CCD5FF /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
@@ -556,6 +560,8 @@
 				1BC217DF2A650C6200990299 /* CustomRangeSlider.swift */,
 				1BC217E72A65222000990299 /* CustomTextfield.swift */,
 				1BC217EE2A654E6800990299 /* CustomButton.swift */,
+				1B4B130F2A665DEE0097DFAE /* RadioButton.swift */,
+				1B4B13152A666F4B0097DFAE /* CheckBox.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -930,6 +936,7 @@
 				1BC9E7DA29EFBBD700C8B154 /* SearchBarCollectionViewCell.swift in Sources */,
 				1BDFA23629ED404B00340837 /* AlbumsCollectionViewCell.swift in Sources */,
 				1BE8C0E529EEA05C00FC3632 /* WebDemoViewController.swift in Sources */,
+				1B4B13102A665DEE0097DFAE /* RadioButton.swift in Sources */,
 				1B790B0429F15A3F00E9A247 /* ToolBarDemoViewController.swift in Sources */,
 				1BC217EF2A654E6800990299 /* CustomButton.swift in Sources */,
 				1B37606129F1191C000D4107 /* StackViewDemoViewController.swift in Sources */,
@@ -968,6 +975,7 @@
 				1B4E45F929E90DD30043A415 /* CollectionViewController.swift in Sources */,
 				1B65E52A29E3EB9A0090E749 /* ButtonViewController.swift in Sources */,
 				1B9EC8E929F92E1B00168A69 /* ImageCollectionViewController.swift in Sources */,
+				1B4B13162A666F4B0097DFAE /* CheckBox.swift in Sources */,
 				1B9EC8E329F9245000168A69 /* AlbumDemoCollectionViewCell.swift in Sources */,
 				1BE2D3732A0E31EE00E76B0F /* ComponentsTableViewCell.swift in Sources */,
 				1BDDA26429E6D07000D06376 /* StateTableViewCell.swift in Sources */,

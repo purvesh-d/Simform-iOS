@@ -10,13 +10,13 @@ import UIKit
 @IBDesignable
 class CustomTextfield: UITextField {
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupView()
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
         setupView()
     }
     
@@ -72,7 +72,7 @@ class CustomTextfield: UITextField {
         }
     }
     
-    private let textPadding = UIEdgeInsets(top: 15, left: 40, bottom: 15, right: 40)
+    private let textPadding = UIEdgeInsets(top: 15, left: 45, bottom: 15, right: 45)
     
     override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: .init(top: 0, left: 15, bottom: 0, right: 0))

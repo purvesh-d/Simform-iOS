@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPg-aI-K7J" customClass="CustomTextfield" customModule="LaunchScreenDemo" customModuleProvider="target">
-                                <rect key="frame" x="70" y="125.00000000000001" width="253" height="52.666666666666671"/>
+                                <rect key="frame" x="60" y="129" width="273" height="52.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -34,19 +34,72 @@
                                     <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="trash" catalog="system"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bcP-rR-Dq9">
+                                <rect key="frame" x="115.33333333333333" y="548.66666666666663" width="162.66666666666669" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJk-Gd-52Z" customClass="RadioButton" customModule="LaunchScreenDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Male">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="maleRadioBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nTF-Pw-JPu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZY-M4-3XF" customClass="RadioButton" customModule="LaunchScreenDemo" customModuleProvider="target">
+                                        <rect key="frame" x="83.333333333333343" y="0.0" width="79.333333333333343" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Female">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="femaleRadioBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wnU-so-zYY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3C4-tB-vE0">
+                                <rect key="frame" x="62.666666666666657" y="653.66666666666663" width="268" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmB-BT-4f2" customClass="CheckBox" customModule="LaunchScreenDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Netflix">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShN-So-tQB" customClass="CheckBox" customModule="LaunchScreenDemo" customModuleProvider="target">
+                                        <rect key="frame" x="91" y="0.0" width="86" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Amazon">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeA-03-ejf" customClass="CheckBox" customModule="LaunchScreenDemo" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="0.0" width="86" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Hotstar">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4s-I3-g2G" customClass="CustomButton" customModule="LaunchScreenDemo" customModuleProvider="target">
-                                <rect key="frame" x="159" y="257.66666666666669" width="75" height="34.333333333333314"/>
+                                <rect key="frame" x="159" y="261.66666666666669" width="75" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPrimary" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" systemColor="linkColor"/>
+                                        <color key="value" systemColor="systemRedColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="hello"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -62,21 +115,26 @@
                                         <real key="value" value="90"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y5H-Kz-07u"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kPg-aI-K7J" secondAttribute="trailing" constant="70" id="ECH-Wd-rYZ"/>
-                            <constraint firstItem="A4s-I3-g2G" firstAttribute="top" secondItem="kPg-aI-K7J" secondAttribute="bottom" constant="80" id="Kap-Kr-x5B"/>
-                            <constraint firstItem="A4s-I3-g2G" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Ryc-VQ-FdK"/>
-                            <constraint firstItem="kPg-aI-K7J" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="70" id="jXQ-2C-Ncm"/>
-                            <constraint firstItem="kPg-aI-K7J" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="66" id="vJc-c6-uMa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kPg-aI-K7J" secondAttribute="trailing" constant="60" id="1tL-Je-GXb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="3C4-tB-vE0" secondAttribute="bottom" constant="130" id="3i4-Xd-ezk"/>
+                            <constraint firstItem="3C4-tB-vE0" firstAttribute="top" secondItem="bcP-rR-Dq9" secondAttribute="bottom" constant="70.666666666666629" id="3m1-2U-i9c"/>
+                            <constraint firstItem="A4s-I3-g2G" firstAttribute="centerX" secondItem="kPg-aI-K7J" secondAttribute="centerX" id="MEo-gc-Udw"/>
+                            <constraint firstItem="bcP-rR-Dq9" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="PyM-wn-8vb"/>
+                            <constraint firstItem="kPg-aI-K7J" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="hAj-ky-cp3"/>
+                            <constraint firstItem="A4s-I3-g2G" firstAttribute="top" secondItem="kPg-aI-K7J" secondAttribute="bottom" constant="80" id="jue-zK-4T3"/>
+                            <constraint firstItem="3C4-tB-vE0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="lmg-Mb-sYk"/>
+                            <constraint firstItem="kPg-aI-K7J" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="70" id="xvb-5V-uYH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="femaleRadioBtn" destination="ZZY-M4-3XF" id="Lo6-z3-nVq"/>
+                        <outlet property="maleRadioBtn" destination="zJk-Gd-52Z" id="LKt-0e-Oge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +146,7 @@
             <size key="intrinsicContentSize" width="75" height="34.333333333333336"/>
         </designable>
         <designable name="kPg-aI-K7J">
-            <size key="intrinsicContentSize" width="98" height="52.666666666666664"/>
+            <size key="intrinsicContentSize" width="108" height="52.666666666666664"/>
         </designable>
     </designables>
     <resources>
@@ -97,14 +155,14 @@
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -9,11 +9,23 @@ import UIKit
 
 class CustomControlsViewController: UIViewController {
 
-    // MARK: - Let
+    // MARK: - IBOutlets and Let
+    @IBOutlet private weak var maleRadioBtn: RadioButton!
+    @IBOutlet private weak var femaleRadioBtn: RadioButton!
     private let rangeSlider = CustomRangeSlider(frame: .zero)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+    }
+    
+    // MARK: - Radio button actions
+    @IBAction func maleRadioBtnAction(_ sender: RadioButton) {
+        femaleRadioBtn.isChecked = maleRadioBtn.isChecked
+    }
+    
+    @IBAction func femaleRadioBtnAction(_ sender: RadioButton) {
+        maleRadioBtn.isChecked = femaleRadioBtn.isChecked
     }
     
     // MARK: - Private method
@@ -28,9 +40,5 @@ class CustomControlsViewController: UIViewController {
         let height: CGFloat = 30
         rangeSlider.frame = CGRect(x: 0, y: 0, width: width, height: height)
         rangeSlider.center = view.center
-    }
-    
-    @IBAction func buttonAction(_ sender: UIButton) {
-        print("Button Tapped.")
     }
 }

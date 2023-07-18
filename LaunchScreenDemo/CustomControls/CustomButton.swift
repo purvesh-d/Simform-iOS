@@ -10,6 +10,7 @@ import UIKit
 @IBDesignable
 class CustomButton: UIButton {
     
+    // MARK: - Button properties
     @IBInspectable
     var borderWidth: CGFloat {
         set {
@@ -41,22 +42,9 @@ class CustomButton: UIButton {
     }
     
     @IBInspectable
-    var shadowColor: UIColor {
-        set {
-            layer.shadowColor = newValue.cgColor
-        }
-        get {
-            return UIColor(cgColor: layer.shadowColor!)
-        }
-    }
-    
-    @IBInspectable
-    var shadowOpacity: Float {
-        set {
-            layer.shadowOpacity = newValue
-        }
-        get {
-            return layer.shadowOpacity
+    var isPrimary: Bool = false {
+        didSet {
+            isPrimary ? filledButton() : outlinedButton()
         }
     }
     
@@ -70,9 +58,32 @@ class CustomButton: UIButton {
         updateView()
     }
     
+    // MARK: - Private methods
     private func updateView() {
         layer.cornerRadius = 10
         layer.borderWidth = 3
         layer.borderColor = UIColor.blue.cgColor
+        isPrimary ? filledButton() : outlinedButton()
+        addTarget(self, action: #selector(togglePrimary), for: .touchUpInside)
+    }
+    
+    private func filledButton() {
+        layer.borderWidth = 0
+        backgroundColor = tintColor
+        setTitleColor(.white, for: .normal)
+        setTitle("Filled", for: .normal)
+    }
+    
+    private func outlinedButton() {
+        layer.borderWidth = 1
+        layer.borderColor = tintColor.cgColor
+        backgroundColor = .clear
+        setTitleColor(tintColor, for: .normal)
+        setTitle("Outlined", for: .normal)
+    }
+    
+    @objc
+    private func togglePrimary() {
+        isPrimary.toggle()
     }
 }
