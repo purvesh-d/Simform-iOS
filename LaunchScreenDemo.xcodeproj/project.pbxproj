@@ -631,12 +631,12 @@
 		1BCD56E02A53FBF40024219C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1B7E0F6C2A56CA9C00ABAC3F /* JeweleryUpdateViewController.swift */,
 				1B30BCB72A54177500D084F3 /* UserListViewController.swift */,
 				1B30BCC52A54212200D084F3 /* UpdateUserViewController.swift */,
 				1B30BCC72A54335E00D084F3 /* RegisterUserViewController.swift */,
 				1BE95A0B2A559901005C5EA8 /* RegUserViewController.swift */,
 				1BE95A0D2A55A916005C5EA8 /* JeweleryViewController.swift */,
-				1B7E0F6C2A56CA9C00ABAC3F /* JeweleryUpdateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

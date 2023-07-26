@@ -59,7 +59,7 @@ struct ComponentsModel {
             ComponentsModel(storyBoard: ComponentsModel.WebServicesURLSession, viewController: "LoginUserViewController", title: "URL Session"),
             
             ComponentsModel(storyBoard: ComponentsModel.WebServicesAlamofire, viewController: "RegisterUserViewController", title: "Alamofire Demo"),
-            ComponentsModel(storyBoard: ComponentsModel.WebServicesAlamofire, viewController: "RegUserViewController", title: "Alamofire Demo2"),
+            ComponentsModel(storyBoard: ComponentsModel.WebServicesAlamofire, viewController: "RegUserViewController", title: "Jewelery Demo"),
             
             ComponentsModel(storyBoard: ComponentsModel.CustomControls, viewController: "CustomControlsViewController", title: "Custom Controls")
         ]
